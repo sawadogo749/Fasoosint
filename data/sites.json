@@ -1,0 +1,2874 @@
+[
+  {
+    "name": "2Dimensions",
+    "url": "https://2Dimensions.com/a/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "7Cups",
+    "url": "https://www.7cups.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "9GAG",
+    "url": "https://www.9gag.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "About.me",
+    "url": "https://about.me/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Academia.edu",
+    "url": "https://independent.academia.edu/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "AdmireMe.Vip",
+    "url": "https://admireme.vip/{username}",
+    "error_type": "message",
+    "error_msg": "Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Airbit",
+    "url": "https://airbit.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Airliners",
+    "url": "https://www.airliners.net/user/{username}/profile/photos",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "AniWorld",
+    "url": "https://aniworld.to/user/profil/{username}",
+    "error_type": "message",
+    "error_msg": "Dieses Profil ist nicht verfügbar",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Apple Developer",
+    "url": "https://developer.apple.com/forums/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Aparat",
+    "url": "https://www.aparat.com/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Archive of Our Own",
+    "url": "https://archiveofourown.org/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Arduino Forum",
+    "url": "https://forum.arduino.cc/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ArtStation",
+    "url": "https://www.artstation.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Asciinema",
+    "url": "https://asciinema.org/~{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ask Fedora",
+    "url": "https://ask.fedoraproject.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Atcoder",
+    "url": "https://atcoder.jp/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vjudge",
+    "url": "https://VJudge.net/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Audiojungle",
+    "url": "https://audiojungle.net/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Autofrage",
+    "url": "https://www.autofrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "AWS Skills Profile",
+    "url": "https://skillsprofile.skillbuilder.aws/user/{username}/",
+    "error_type": "message",
+    "error_msg": "shareProfileAccepted\":false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BOOTH",
+    "url": "https://{username}.booth.pm/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bandcamp",
+    "url": "https://www.bandcamp.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bazar.cz",
+    "url": "https://www.bazar.cz/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Behance",
+    "url": "https://www.behance.net/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bezuzyteczna",
+    "url": "https://bezuzyteczna.pl/uzytkownicy/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BiggerPockets",
+    "url": "https://www.biggerpockets.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BioHacking",
+    "url": "https://forum.dangerousthings.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BitBucket",
+    "url": "https://bitbucket.org/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bitwarden Forum",
+    "url": "https://community.bitwarden.com/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Blipfoto",
+    "url": "https://www.blipfoto.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Blitz Tactics",
+    "url": "https://blitztactics.com/{username}",
+    "error_type": "message",
+    "error_msg": "That page doesn't exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BongaCams",
+    "url": "https://pt.bongacams.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bookcrossing",
+    "url": "https://www.bookcrossing.com/mybookshelf/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BraveCommunity",
+    "url": "https://community.brave.com/u/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BreachSta.rs Forum",
+    "url": "https://breachsta.rs/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Error - BreachStars</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BugCrowd",
+    "url": "https://bugcrowd.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BuyMeACoffee",
+    "url": "https://buymeacoff.ee/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BuzzFeed",
+    "url": "https://buzzfeed.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cfx.re Forum",
+    "url": "https://forum.cfx.re/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CGTrader",
+    "url": "https://www.cgtrader.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CNET",
+    "url": "https://www.cnet.com/profiles/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CTAN",
+    "url": "https://ctan.org/author/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Caddy Community",
+    "url": "https://caddy.community/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Car Talk Community",
+    "url": "https://community.cartalk.com/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Career.habr",
+    "url": "https://career.habr.com/{username}",
+    "error_type": "message",
+    "error_msg": "<h1>Ошибка 404</h1>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CashApp",
+    "url": "https://cash.app/${username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Championat",
+    "url": "https://www.championat.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chaos",
+    "url": "https://chaos.social/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chatujme.cz",
+    "url": "https://profil.chatujme.cz/{username}",
+    "error_type": "message",
+    "error_msg": "Neexistujicí profil",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ChaturBate",
+    "url": "https://chaturbate.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Choice Community",
+    "url": "https://choice.community/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Clapper",
+    "url": "https://clapperapp.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CloudflareCommunity",
+    "url": "https://community.cloudflare.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Clozemaster",
+    "url": "https://www.clozemaster.com/players/{username}",
+    "error_type": "message",
+    "error_msg": "Oh no! Player not found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Clubhouse",
+    "url": "https://www.clubhouse.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Codeberg",
+    "url": "https://codeberg.org/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Codecademy",
+    "url": "https://www.codecademy.com/profiles/{username}",
+    "error_type": "message",
+    "error_msg": "This profile could not be found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Codeforces",
+    "url": "https://codeforces.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Codepen",
+    "url": "https://codepen.io/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coders Rank",
+    "url": "https://profile.codersrank.io/user/{username}/",
+    "error_type": "message",
+    "error_msg": "not a registered member",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coderwall",
+    "url": "https://coderwall.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Codewars",
+    "url": "https://www.codewars.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coinvote",
+    "url": "https://coinvote.cc/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ColourLovers",
+    "url": "https://www.colourlovers.com/lover/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coroflot",
+    "url": "https://www.coroflot.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cplusplus",
+    "url": "https://cplusplus.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "<title>404 Page Not Found</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cracked Forum",
+    "url": "https://cracked.ax/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Credly",
+    "url": "https://www.credly.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Crowdin",
+    "url": "https://crowdin.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cryptomator Forum",
+    "url": "https://community.cryptomator.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cults3D",
+    "url": "https://cults3d.com/en/users/{username}/creations",
+    "error_type": "message",
+    "error_msg": "Oh dear, this page is not working!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CyberDefenders",
+    "url": "https://cyberdefenders.org/p/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "DEV Community",
+    "url": "https://dev.to/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "dcinside",
+    "url": "https://gallog.dcinside.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Discogs",
+    "url": "https://www.discogs.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Discuss.Elastic.co",
+    "url": "https://discuss.elastic.co/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Disqus",
+    "url": "https://disqus.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Docker Hub",
+    "url": "https://hub.docker.com/u/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Dribbble",
+    "url": "https://dribbble.com/{username}",
+    "error_type": "message",
+    "error_msg": "Whoops, that page is gone.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Eintracht Frankfurt Forum",
+    "url": "https://community.eintracht.de/fans/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Envato Forum",
+    "url": "https://forums.envato.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Erome",
+    "url": "https://www.erome.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "exophase",
+    "url": "https://www.exophase.com/user/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "EyeEm",
+    "url": "https://www.eyeem.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "F3.cool",
+    "url": "https://f3.cool/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fameswap",
+    "url": "https://fameswap.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fandom",
+    "url": "https://www.fandom.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fanpop",
+    "url": "https://www.fanpop.com/fans/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Finanzfrage",
+    "url": "https://www.finanzfrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Flickr",
+    "url": "https://www.flickr.com/people/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Flightradar24",
+    "url": "https://my.flightradar24.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Flipboard",
+    "url": "https://flipboard.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Football",
+    "url": "https://www.rusfootball.info/user/{username}/",
+    "error_type": "message",
+    "error_msg": "Пользователь с таким именем не найден",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "FortniteTracker",
+    "url": "https://fortnitetracker.com/profile/all/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Forum Ophilia",
+    "url": "https://www.forumophilia.com/profile.php?mode=viewprofile&u={username}",
+    "error_type": "message",
+    "error_msg": "that user does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fosstodon",
+    "url": "https://fosstodon.org/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Framapiaf",
+    "url": "https://framapiaf.org/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Freesound",
+    "url": "https://freesound.org/people/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GaiaOnline",
+    "url": "https://www.gaiaonline.com/profiles/{username}",
+    "error_type": "message",
+    "error_msg": "No user ID specified or user does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gamespot",
+    "url": "https://www.gamespot.com/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GameFAQs",
+    "url": "https://gamefaqs.gamespot.com/community/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GeeksforGeeks",
+    "url": "https://auth.geeksforgeeks.org/user/{username}",
+    "error_type": "message",
+    "error_msg": "false   | GeeksforGeeks Profile",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Genius (Artists)",
+    "url": "https://genius.com/artists/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Genius (Users)",
+    "url": "https://genius.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gesundheitsfrage",
+    "url": "https://www.gesundheitsfrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GetMyUni",
+    "url": "https://www.getmyuni.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Giant Bomb",
+    "url": "https://www.giantbomb.com/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Giphy",
+    "url": "https://giphy.com/{username}",
+    "error_type": "message",
+    "error_msg": "<title> GIFs - Find &amp; Share on GIPHY</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GitHub",
+    "url": "https://www.github.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Warframe Market",
+    "url": "https://warframe.market/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gitea",
+    "url": "https://gitea.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gitee",
+    "url": "https://gitee.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GoodReads",
+    "url": "https://www.goodreads.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Google Play",
+    "url": "https://play.google.com/store/apps/developer?id={username}",
+    "error_type": "message",
+    "error_msg": "the requested URL was not found on this server",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gradle",
+    "url": "https://plugins.gradle.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Grailed",
+    "url": "https://www.grailed.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gravatar",
+    "url": "http://en.gravatar.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gumroad",
+    "url": "https://www.gumroad.com/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found (404) - Gumroad",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gutefrage",
+    "url": "https://www.gutefrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackTheBox",
+    "url": "https://forum.hackthebox.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hackaday",
+    "url": "https://hackaday.io/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackerEarth",
+    "url": "https://hackerearth.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackerOne",
+    "url": "https://hackerone.com/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackerRank",
+    "url": "https://hackerrank.com/{username}",
+    "error_type": "message",
+    "error_msg": "Something went wrong",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackerSploit",
+    "url": "https://forum.hackersploit.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HackMD",
+    "url": "https://hackmd.io/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Harvard Scholar",
+    "url": "https://scholar.harvard.edu/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hive Blog",
+    "url": "https://hive.blog/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>User Not Found - Hive</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Holopin",
+    "url": "https://holopin.io/@{username}",
+    "error_type": "message",
+    "error_msg": "true",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Houzz",
+    "url": "https://houzz.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HubPages",
+    "url": "https://hubpages.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HudsonRock",
+    "url": "https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-username?username={username}",
+    "error_type": "message",
+    "error_msg": "This username is not associated",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "IFTTT",
+    "url": "https://www.ifttt.com/p/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ifunny",
+    "url": "https://ifunny.co/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "IRC-Galleria",
+    "url": "https://irc-galleria.net/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Icons8 Community",
+    "url": "https://community.icons8.com/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Image Fap",
+    "url": "https://www.imagefap.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "Not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ImgUp.cz",
+    "url": "https://imgup.cz/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Imgur",
+    "url": "https://imgur.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "imood",
+    "url": "https://www.imood.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Instapaper",
+    "url": "https://www.instapaper.com/p/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Instructables",
+    "url": "https://www.instructables.com/member/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ionic Forum",
+    "url": "https://forum.ionicframework.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Issuu",
+    "url": "https://issuu.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Itemfix",
+    "url": "https://www.itemfix.com/c/{username}",
+    "error_type": "message",
+    "error_msg": "<title>ItemFix - Channel: </title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Jellyfin Weblate",
+    "url": "https://translate.jellyfin.org/user/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Joplin Forum",
+    "url": "https://discourse.joplinapp.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Jupyter Community Forum",
+    "url": "https://discourse.jupyter.org/u/{username}/summary",
+    "error_type": "message",
+    "error_msg": "Oops! That page doesn’t exist or is private.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Kaggle",
+    "url": "https://www.kaggle.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Keybase",
+    "url": "https://keybase.io/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Kick",
+    "url": "https://kick.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Kongregate",
+    "url": "https://www.kongregate.com/accounts/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LOR",
+    "url": "https://www.linux.org.ru/people/{username}/profile",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Laracast",
+    "url": "https://laracasts.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Launchpad",
+    "url": "https://launchpad.net/~{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LessWrong",
+    "url": "https://www.lesswrong.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Lichess",
+    "url": "https://lichess.org/@/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LinkedIn",
+    "url": "https://linkedin.com/in/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Linktree",
+    "url": "https://linktr.ee/{username}",
+    "error_type": "message",
+    "error_msg": "\"statusCode\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LinuxFR.org",
+    "url": "https://linuxfr.org/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Listed",
+    "url": "https://listed.to/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Lobsters",
+    "url": "https://lobste.rs/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LottieFiles",
+    "url": "https://lottiefiles.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MMORPG Forum",
+    "url": "https://forums.mmorpg.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mamot",
+    "url": "https://mamot.fr/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Medium",
+    "url": "https://medium.com/@{username}",
+    "error_type": "message",
+    "error_msg": "<body",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Memrise",
+    "url": "https://www.memrise.com/user/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MixCloud",
+    "url": "https://www.mixcloud.com/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Motherless",
+    "url": "https://motherless.com/m/{username}",
+    "error_type": "message",
+    "error_msg": "no longer a member",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Motorradfrage",
+    "url": "https://www.motorradfrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MuseScore",
+    "url": "https://musescore.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MyAnimeList",
+    "url": "https://myanimelist.net/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MyMiniFactory",
+    "url": "https://www.myminifactory.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Myspace",
+    "url": "https://myspace.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "NICommunityForum",
+    "url": "https://community.native-instruments.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "The page you were looking for could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "namuwiki",
+    "url": "https://namu.wiki/w/%EC%82%AC%EC%9A%A9%EC%9E%90:{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Naver",
+    "url": "https://blog.naver.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Needrom",
+    "url": "https://www.needrom.com/author/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Nextcloud Forum",
+    "url": "https://help.nextcloud.com/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "NintendoLife",
+    "url": "https://www.nintendolife.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "NitroType",
+    "url": "https://www.nitrotype.com/racer/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Nitro Type | Competitive Typing Game | Race Your Friends</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "NotABug.org",
+    "url": "https://notabug.org/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Nothing Community",
+    "url": "https://nothing.community/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Nyaa.si",
+    "url": "https://nyaa.si/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ObservableHQ",
+    "url": "https://observablehq.com/@{username}",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Open Collective",
+    "url": "https://opencollective.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "OpenGameArt",
+    "url": "https://opengameart.org/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "OpenStreetMap",
+    "url": "https://www.openstreetmap.org/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Odysee",
+    "url": "https://odysee.com/@{username}",
+    "error_type": "message",
+    "error_msg": "<link rel=\"canonical\" content=\"odysee.com\"/>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Opensource",
+    "url": "https://opensource.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "OurDJTalk",
+    "url": "https://ourdjtalk.com/members?username={username}",
+    "error_type": "message",
+    "error_msg": "The specified member cannot be found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Outgress",
+    "url": "https://outgress.com/agents/{username}",
+    "error_type": "message",
+    "error_msg": "Outgress - Error",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PCGamer",
+    "url": "https://forums.pcgamer.com/members/?username={username}",
+    "error_type": "message",
+    "error_msg": "The specified member cannot be found. Please enter a member's entire name.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PSNProfiles.com",
+    "url": "https://psnprofiles.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pastebin",
+    "url": "https://pastebin.com/u/{username}",
+    "error_type": "message",
+    "error_msg": "Not Found (#404)",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Patreon",
+    "url": "https://www.patreon.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PentesterLab",
+    "url": "https://pentesterlab.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HotUKdeals",
+    "url": "https://www.hotukdeals.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mydealz",
+    "url": "https://www.mydealz.de/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chollometro",
+    "url": "https://www.chollometro.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PepperNL",
+    "url": "https://nl.pepper.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PepperPL",
+    "url": "https://www.pepper.pl/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Preisjaeger",
+    "url": "https://www.preisjaeger.at/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pepperdeals",
+    "url": "https://www.pepperdeals.se/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PepperealsUS",
+    "url": "https://www.pepperdeals.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Promodescuentos",
+    "url": "https://www.promodescuentos.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Periscope",
+    "url": "https://www.periscope.tv/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pinkbike",
+    "url": "https://www.pinkbike.com/u/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "pixelfed.social",
+    "url": "https://pixelfed.social/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Playstrategy",
+    "url": "https://playstrategy.org/@/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Plurk",
+    "url": "https://www.plurk.com/{username}",
+    "error_type": "message",
+    "error_msg": "User Not Found!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PocketStars",
+    "url": "https://pocketstars.com/{username}",
+    "error_type": "message",
+    "error_msg": "Join Your Favorite Adult Stars",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pokemon Showdown",
+    "url": "https://pokemonshowdown.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Polygon",
+    "url": "https://www.polygon.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Polymart",
+    "url": "https://polymart.org/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pornhub",
+    "url": "https://pornhub.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ProductHunt",
+    "url": "https://www.producthunt.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pychess",
+    "url": "https://www.pychess.org/@/{username}",
+    "error_type": "message",
+    "error_msg": "404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PromoDJ",
+    "url": "http://promodj.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pronouns.page",
+    "url": "https://pronouns.page/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Python.org Discussions",
+    "url": "https://discuss.python.org/u/{username}/summary",
+    "error_type": "message",
+    "error_msg": "Oops! That page doesn’t exist or is private.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Rate Your Music",
+    "url": "https://rateyourmusic.com/~{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Rclone Forum",
+    "url": "https://forum.rclone.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Redbubble",
+    "url": "https://www.redbubble.com/people/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Realmeye",
+    "url": "https://www.realmeye.com/player/{username}",
+    "error_type": "message",
+    "error_msg": "Sorry, but we either:",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Reisefrage",
+    "url": "https://www.reisefrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Replit.com",
+    "url": "https://replit.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ResearchGate",
+    "url": "https://www.researchgate.net/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ReverbNation",
+    "url": "https://www.reverbnation.com/{username}",
+    "error_type": "message",
+    "error_msg": "Sorry, we couldn't find that page",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Roblox",
+    "url": "https://www.roblox.com/user.aspx?username={username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ruby Forums",
+    "url": "https://ruby-forum.com/u/{username}/summary",
+    "error_type": "message",
+    "error_msg": "Oops! That page doesn’t exist or is private.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "RubyGems",
+    "url": "https://rubygems.org/profiles/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Rumble",
+    "url": "https://rumble.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SWAPD",
+    "url": "https://swapd.co/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Sbazar.cz",
+    "url": "https://www.sbazar.cz/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Scratch",
+    "url": "https://scratch.mit.edu/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SEOForum",
+    "url": "https://seoforum.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ShitpostBot5000",
+    "url": "https://www.shitpostbot.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Signal",
+    "url": "https://community.signalusers.org/u/{username}",
+    "error_type": "message",
+    "error_msg": "Oops! That page doesn’t exist or is private.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Sketchfab",
+    "url": "https://sketchfab.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Slant",
+    "url": "https://www.slant.co/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Slashdot",
+    "url": "https://slashdot.org/~{username}",
+    "error_type": "message",
+    "error_msg": "user you requested does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Slides",
+    "url": "https://slides.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Snapchat",
+    "url": "https://www.snapchat.com/add/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SoundCloud",
+    "url": "https://soundcloud.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SourceForge",
+    "url": "https://sourceforge.net/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SpaceHey",
+    "url": "https://spacehey.com/{username}",
+    "error_type": "message",
+    "error_msg": "Not Found (Error 404) | SpaceHey",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SoylentNews",
+    "url": "https://soylentnews.org/~{username}",
+    "error_type": "message",
+    "error_msg": "The user you requested does not exist, no matter how much you wish this might be the case.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SpeakerDeck",
+    "url": "https://speakerdeck.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Speedrun.com",
+    "url": "https://speedrun.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Spells8",
+    "url": "https://forum.spells8.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Splits.io",
+    "url": "https://splits.io/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Sporcle",
+    "url": "https://www.sporcle.com/user/{username}/people",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Sportlerfrage",
+    "url": "https://www.sportlerfrage.net/nutzer/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SportsRU",
+    "url": "https://www.sports.ru/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Spotify",
+    "url": "https://open.spotify.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Star Citizen",
+    "url": "https://robertsspaceindustries.com/citizens/{username}",
+    "error_type": "message",
+    "error_msg": "404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Status Cafe",
+    "url": "https://status.cafe/users/{username}",
+    "error_type": "message",
+    "error_msg": "Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Steam Community (Group)",
+    "url": "https://steamcommunity.com/groups/{username}",
+    "error_type": "message",
+    "error_msg": "No group could be retrieved for the given URL",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Steam Community (User)",
+    "url": "https://steamcommunity.com/id/{username}/",
+    "error_type": "message",
+    "error_msg": "The specified profile could not be found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Strava",
+    "url": "https://www.strava.com/athletes/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SublimeForum",
+    "url": "https://forum.sublimetext.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TheMovieDB",
+    "url": "https://www.themoviedb.org/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TikTok",
+    "url": "https://www.tiktok.com/@{username}",
+    "error_type": "message",
+    "error_msg": "\"statusCode\":10221",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Topmate",
+    "url": "https://topmate.io/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TRAKTRAIN",
+    "url": "https://traktrain.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tellonym.me",
+    "url": "https://tellonym.me/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tenor",
+    "url": "https://tenor.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Terraria Forums",
+    "url": "https://forums.terraria.org/index.php?search/42798315/&c[users]={username}&o=relevance",
+    "error_type": "message",
+    "error_msg": "The following members could not be found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ThemeForest",
+    "url": "https://themeforest.net/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TnAFlix",
+    "url": "https://www.tnaflix.com/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TradingView",
+    "url": "https://www.tradingview.com/u/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Trakt",
+    "url": "https://www.trakt.tv/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TrashboxRU",
+    "url": "https://trashbox.ru/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Trawelling",
+    "url": "https://traewelling.de/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tuna",
+    "url": "https://tuna.voicemod.net/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tweakers",
+    "url": "https://tweakers.net/gallery/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Twitch",
+    "url": "https://www.twitch.tv/{username}",
+    "error_type": "message",
+    "error_msg": "content='Twitch is the world&#39;s leading video platform and community for gamers.'",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Twitter",
+    "url": "https://x.com/{username}",
+    "error_type": "message",
+    "error_msg": "<div class=\"error-panel\"><span>User ",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Typeracer",
+    "url": "https://data.typeracer.com/pit/profile?user={username}",
+    "error_type": "message",
+    "error_msg": "Profile Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ultimate-Guitar",
+    "url": "https://ultimate-guitar.com/u/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Unsplash",
+    "url": "https://unsplash.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Untappd",
+    "url": "https://untappd.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Valorant Forums",
+    "url": "https://valorantforums.com/u/{username}",
+    "error_type": "message",
+    "error_msg": "The page you requested could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "VK",
+    "url": "https://vk.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "VSCO",
+    "url": "https://vsco.co/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Velog",
+    "url": "https://velog.io/@{username}/posts",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vero",
+    "url": "https://vero.co/{username}",
+    "error_type": "message",
+    "error_msg": "Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vimeo",
+    "url": "https://vimeo.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "VLR",
+    "url": "https://www.vlr.gg/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "WICG Forum",
+    "url": "https://discourse.wicg.io/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wakatime",
+    "url": "https://wakatime.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Warrior Forum",
+    "url": "https://www.warriorforum.com/members/{username}.html",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wattpad",
+    "url": "https://www.wattpad.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wikidot",
+    "url": "http://www.wikidot.com/user:info/{username}",
+    "error_type": "message",
+    "error_msg": "User does not exist.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Windy",
+    "url": "https://community.windy.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "WolframalphaForum",
+    "url": "https://community.wolfram.com/web/{username}/home",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "WordPressOrg",
+    "url": "https://profiles.wordpress.org/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wordnik",
+    "url": "https://www.wordnik.com/users/{username}",
+    "error_type": "message",
+    "error_msg": "Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wykop",
+    "url": "https://www.wykop.pl/ludzie/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Xbox Gamertag",
+    "url": "https://xboxgamertag.com/search/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Xvideos",
+    "url": "https://xvideos.com/profiles/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YouPic",
+    "url": "https://youpic.com/photographer/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YouTube",
+    "url": "https://www.youtube.com/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "akniga",
+    "url": "https://akniga.org/profile/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "babyblogRU",
+    "url": "https://www.babyblog.ru/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "couchsurfing",
+    "url": "https://www.couchsurfing.com/people/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "d3RU",
+    "url": "https://d3.ru/user/{username}/posts",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "datingRU",
+    "url": "http://dating.ru/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "drive2",
+    "url": "https://www.drive2.ru/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "eGPU",
+    "url": "https://egpu.io/forums/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "fixya",
+    "url": "https://www.fixya.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "fl",
+    "url": "https://www.fl.ru/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "forum_guns",
+    "url": "https://forum.guns.ru/forummisc/blog/{username}",
+    "error_type": "message",
+    "error_msg": "action=https://forum.guns.ru/forummisc/blog/search",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "freecodecamp",
+    "url": "https://www.freecodecamp.org/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "furaffinity",
+    "url": "https://www.furaffinity.net/user/{username}",
+    "error_type": "message",
+    "error_msg": "This user cannot be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "geocaching",
+    "url": "https://www.geocaching.com/p/default.aspx?u={username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "habr",
+    "url": "https://habr.com/ru/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "hackster",
+    "url": "https://www.hackster.io/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "hunting",
+    "url": "https://www.hunting.ru/forum/members/?username={username}",
+    "error_type": "message",
+    "error_msg": "Указанный пользователь не найден. Пожалуйста, введите другое имя.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "irecommend",
+    "url": "https://irecommend.ru/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "jbzd.com.pl",
+    "url": "https://jbzd.com.pl/uzytkownik/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "jeuxvideo",
+    "url": "https://www.jeuxvideo.com/profil/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "kofi",
+    "url": "https://ko-fi.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "kwork",
+    "url": "https://kwork.ru/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "last.fm",
+    "url": "https://last.fm/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "leasehackr",
+    "url": "https://forum.leasehackr.com/u/{username}/summary/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "livelib",
+    "url": "https://www.livelib.ru/reader/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mastodon.cloud",
+    "url": "https://mastodon.cloud/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mastodon.social",
+    "url": "https://mastodon.social/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mastodon.xyz",
+    "url": "https://mastodon.xyz/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mstdn.social",
+    "url": "https://mstdn.social/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "moikrug",
+    "url": "https://moikrug.ru/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mstdn.io",
+    "url": "https://mstdn.io/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "nairaland.com",
+    "url": "https://www.nairaland.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "n8n Community",
+    "url": "https://community.n8n.io/u/{username}/summary",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "note",
+    "url": "https://note.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "npm",
+    "url": "https://www.npmjs.com/~{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "osu!",
+    "url": "https://osu.ppy.sh/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "pikabu",
+    "url": "https://pikabu.ru/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "prog.hu",
+    "url": "https://prog.hu/azonosito/info/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "satsisRU",
+    "url": "https://satsis.info/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "sessionize",
+    "url": "https://sessionize.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "social.tchncs.de",
+    "url": "https://social.tchncs.de/@{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "spletnik",
+    "url": "https://spletnik.ru/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "threads",
+    "url": "https://www.threads.net/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>Threads • Log in</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "toster",
+    "url": "https://www.toster.ru/user/{username}/answers",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "uid",
+    "url": "http://uid.me/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "write.as",
+    "url": "https://write.as/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "xHamster",
+    "url": "https://xhamster.com/users/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "znanylekarz.pl",
+    "url": "https://www.znanylekarz.pl/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Platzi",
+    "url": "https://platzi.com/p/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "BabyRu",
+    "url": "https://www.baby.ru/u/{username}",
+    "error_type": "message",
+    "error_msg": "Страница, которую вы искали, не найдена",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wowhead",
+    "url": "https://wowhead.com/user={username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "addons.wago.io",
+    "url": "https://addons.wago.io/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CurseForge",
+    "url": "https://www.curseforge.com/members/{username}/projects",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  }
+]

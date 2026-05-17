@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FasoOSINT</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red:     #EF2B2D;
+  --green:   #009A00;
+  --yellow:  #FFD700;
+  --dark:    #060a0f;
+  --card:    #0c1117;
+  --card2:   #111820;
+  --border:  #1a2535;
+  --text:    #c8d8e8;
+  --muted:   #4a6080;
+  --mono:    'Share Tech Mono', monospace;
+  --ui:      'Rajdhani', sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--dark);
+  color: var(--text);
+  font-family: var(--ui);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0;
+  background-image:
+    linear-gradient(rgba(239,43,45,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,154,0,.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* FLAG BAR TOP */
+.flag-top {
+  height: 5px;
+  background: linear-gradient(90deg, var(--red) 50%, var(--green) 50%);
+  position: relative;
+}
+.flag-top::after {
+  content: '★';
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--yellow);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* HEADER */
+header {
+  position: relative; z-index: 10;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: rgba(6,10,15,.95);
+  backdrop-filter: blur(12px);
+}
+.logo {
+  font-family: var(--mono);
+  font-size: 1.4rem;
+  display: flex; align-items: center; gap: .5rem;
+}
+.logo .f  { color: var(--red); }
+.logo .a  { color: var(--green); }
+.logo .s  { color: var(--yellow); }
+.logo .o  { color: var(--red); }
+.logo .o2 { color: var(--green); }
+.logo .s2 { color: var(--yellow); }
+.logo .i  { color: var(--red); }
+.logo .n  { color: var(--green); }
+.logo .t  { color: var(--yellow); }
+.logo-ver { color: var(--muted); font-size: .8rem; margin-left: .3rem; }
+
+.lang-toggle { display: flex; gap: .5rem; }
+.lang-btn {
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--muted); font-family: var(--ui); font-size: .85rem;
+  padding: .35rem .8rem; border-radius: 4px; cursor: pointer;
+  transition: all .2s;
+}
+.lang-btn.active { border-color: var(--yellow); color: var(--yellow); }
+.lang-btn:hover { color: var(--text); }
+
+/* MAIN */
+main {
+  position: relative; z-index: 1;
+  max-width: 1100px; margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* SEARCH PANEL */
+.search-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative; overflow: hidden;
+}
+.search-panel::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  background: linear-gradient(90deg, var(--red), var(--yellow), var(--green));
+  animation: scan 3s linear infinite;
+}
+@keyframes scan {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.search-title {
+  font-size: 1.5rem; font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex; align-items: center; gap: .6rem;
+}
+.search-title .r { color: var(--red); }
+.search-title .g { color: var(--green); }
+.search-title .y { color: var(--yellow); }
+
+.search-row {
+  display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;
+}
+.input-group { flex: 1; min-width: 200px; }
+.input-group label {
+  display: block; font-size: .8rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px; margin-bottom: .4rem;
+}
+input[type="text"], select {
+  width: 100%; background: var(--dark);
+  border: 1px solid var(--border); border-radius: 6px;
+  color: var(--text); font-family: var(--mono); font-size: .95rem;
+  padding: .65rem 1rem; outline: none; transition: border-color .2s;
+}
+input[type="text"]:focus { border-color: var(--red); }
+select:focus { border-color: var(--green); }
+input[type="text"]::placeholder { color: var(--muted); }
+select option { background: var(--dark); }
+
+.options-row {
+  display: flex; gap: 1.5rem; flex-wrap: wrap;
+  align-items: center; margin-top: 1rem;
+}
+.checkbox-group {
+  display: flex; align-items: center; gap: .4rem; cursor: pointer;
+}
+.checkbox-group input[type="checkbox"] { accent-color: var(--yellow); width: 16px; height: 16px; }
+.checkbox-group label { font-size: .85rem; color: var(--muted); cursor: pointer; }
+
+.btn-search {
+  background: linear-gradient(135deg, var(--red), #c0001a);
+  color: #fff; font-family: var(--ui); font-weight: 700;
+  font-size: 1.05rem; letter-spacing: 2px;
+  border: none; border-radius: 6px;
+  padding: .8rem 2.5rem; cursor: pointer;
+  transition: all .2s; margin-top: 1.2rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(239,43,45,.3);
+}
+.btn-search:hover {
+  background: linear-gradient(135deg, #ff3344, var(--red));
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(239,43,45,.4);
+}
+.btn-search:disabled { opacity: .4; cursor: not-allowed; transform: none; }
+
+/* PROGRESS */
+#progress-bar-wrap {
+  display: none; margin-top: 1.2rem;
+  background: var(--dark); border-radius: 4px;
+  overflow: hidden; border: 1px solid var(--border);
+}
+.progress-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--red), var(--yellow), var(--green));
+  width: 0%; transition: width .3s;
+  animation: pulse-bar 1.5s ease-in-out infinite;
+}
+@keyframes pulse-bar { 0%,100%{opacity:1} 50%{opacity:.6} }
+#progress-label {
+  font-family: var(--mono); font-size: .8rem; color: var(--muted);
+  padding: .5rem 0 0; text-align: center; display: none;
+}
+
+/* STATS */
+#stats-section { display: none; margin-bottom: 2rem; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.stat-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1.2rem 1.5rem;
+  border-left: 3px solid var(--red);
+  transition: transform .2s;
+}
+.stat-card:hover { transform: translateY(-2px); }
+.stat-card.green  { border-left-color: var(--green); }
+.stat-card.yellow { border-left-color: var(--yellow); }
+.stat-val {
+  font-family: var(--mono); font-size: 2rem; color: var(--red);
+}
+.stat-card.green  .stat-val { color: var(--green); }
+.stat-card.yellow .stat-val { color: var(--yellow); }
+.stat-label {
+  font-size: .8rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px; margin-top: .2rem;
+}
+
+/* RESULTS */
+#results-section { display: none; }
+.section-title {
+  font-size: 1.2rem; font-weight: 700; color: var(--text);
+  margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+.badge {
+  background: var(--red); color: #fff;
+  font-size: .75rem; padding: .15rem .5rem; border-radius: 12px;
+}
+
+/* TABS */
+.cat-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
+.cat-tab {
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--muted); font-family: var(--ui); font-size: .82rem;
+  padding: .35rem .9rem; border-radius: 20px; cursor: pointer;
+  transition: all .2s; text-transform: capitalize;
+}
+.cat-tab.active { border-color: var(--yellow); color: var(--yellow); background: rgba(255,215,0,.08); }
+.cat-tab:hover { color: var(--text); }
+
+/* TABLE */
+.results-table-wrap {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 10px; overflow: hidden;
+}
+.result-row {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: .7rem 1.2rem; border-bottom: 1px solid var(--border);
+  gap: 1rem; transition: background .15s;
+}
+.result-row:last-child { border-bottom: none; }
+.result-row:hover { background: rgba(239,43,45,.04); }
+.result-site { font-weight: 600; min-width: 160px; font-size: .95rem; color: var(--text); }
+.result-url a {
+  color: var(--green); text-decoration: none;
+  font-family: var(--mono); font-size: .82rem; word-break: break-all;
+}
+.result-url a:hover { color: var(--yellow); }
+.result-cat {
+  font-size: .72rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px;
+  min-width: 80px; text-align: right;
+}
+
+/* EXPORTS */
+.exports-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
+.export-btn {
+  display: inline-flex; align-items: center; gap: .4rem;
+  background: var(--card2); border: 1px solid var(--border);
+  color: var(--text); font-family: var(--ui); font-size: .85rem;
+  padding: .5rem 1.2rem; border-radius: 6px; text-decoration: none;
+  transition: all .2s;
+}
+.export-btn:hover { border-color: var(--yellow); color: var(--yellow); }
+
+/* TERMINAL */
+#terminal {
+  display: none;
+  background: #050810; border: 1px solid var(--border);
+  border-radius: 8px; padding: 1rem; margin-top: 1.5rem;
+  max-height: 200px; overflow-y: auto;
+  font-family: var(--mono); font-size: .8rem; line-height: 1.7;
+}
+#terminal .t-found { color: var(--green); }
+#terminal .t-info  { color: var(--muted); }
+#terminal .t-done  { color: var(--yellow); }
+#terminal .t-err   { color: var(--red); }
+
+/* FLAG BAR BOTTOM */
+.flag-bottom {
+  height: 5px;
+  background: linear-gradient(90deg, var(--red) 50%, var(--green) 50%);
+  margin-top: 3rem;
+}
+
+/* FOOTER */
+footer {
+  position: relative; z-index: 1;
+  text-align: center; padding: 1.2rem;
+  color: var(--muted); font-family: var(--mono); font-size: .8rem;
+}
+footer .r { color: var(--red); }
+footer .g { color: var(--green); }
+footer .y { color: var(--yellow); }
+footer a  { color: var(--green); text-decoration: none; }
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header { padding: 1rem; }
+  main { padding: 1.5rem 1rem; }
+  .result-row { flex-direction: column; align-items: flex-start; }
+  .result-cat { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<div class="flag-top"></div>
+
+<header>
+  <div class="logo">
+    <span class="f">F</span><span class="a">a</span><span class="s">s</span><span class="o">o</span><span class="o2">O</span><span class="s2">S</span><span class="i">I</span><span class="n">N</span><span class="t">T</span>
+    <span class="logo-ver">v{{ version }}</span>
+  </div>
+  <div class="lang-toggle">
+    <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
+    <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="search-panel">
+    <div class="search-title">
+      <span class="r">⚡</span>
+      <span class="r">Faso</span><span class="g">OSINT</span>
+      <span class="y">★</span>
+      <span data-fr="Recherche de pseudonyme" data-en="Username Intelligence"></span>
+    </div>
+
+    <div class="search-row">
+      <div class="input-group">
+        <label data-fr="Pseudonyme cible" data-en="Target Username">Pseudonyme cible</label>
+        <input type="text" id="username" placeholder="ex: johndoe" autocomplete="off" />
+      </div>
+      <div class="input-group" style="max-width:160px">
+        <label data-fr="Région" data-en="Region">Région</label>
+        <select id="region">
+          <option value="" data-fr="Toutes" data-en="All">Toutes</option>
+          <option value="global">Global</option>
+          <option value="africa">🌍 Africa</option>
+        </select>
+      </div>
+      <div class="input-group" style="max-width:200px">
+        <label data-fr="Catégorie" data-en="Category">Catégorie</label>
+        <select id="category">
+          <option value="">Toutes / All</option>
+          <option value="social">Social</option>
+          <option value="coding">Coding</option>
+          <option value="gaming">Gaming</option>
+          <option value="video">Video</option>
+          <option value="music">Music</option>
+          <option value="art">Art</option>
+          <option value="blog">Blog</option>
+          <option value="forum">Forum</option>
+          <option value="professional">Professional</option>
+          <option value="security">Security</option>
+          <option value="crypto">Crypto</option>
+          <option value="shopping">Shopping</option>
+          <option value="sport">Sport</option>
+          <option value="education">Education</option>
+          <option value="africa">🌍 Africa</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="options-row">
+      <label class="checkbox-group">
+        <input type="checkbox" id="export-html" />
+        <label for="export-html" data-fr="Rapport HTML" data-en="HTML Report">Rapport HTML</label>
+      </label>
+      <label class="checkbox-group">
+        <input type="checkbox" id="export-csv" />
+        <label for="export-csv">Export CSV</label>
+      </label>
+    </div>
+
+    <button class="btn-search" id="btn-search" onclick="startSearch()">
+      <span data-fr="🔍 LANCER LA RECHERCHE" data-en="🔍 START SEARCH">🔍 LANCER LA RECHERCHE</span>
+    </button>
+
+    <div id="progress-bar-wrap"><div class="progress-bar" id="progress-bar"></div></div>
+    <div id="progress-label"></div>
+    <div id="terminal"></div>
+  </div>
+
+  <!-- STATS -->
+  <div id="stats-section">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-val" id="stat-found">0</div>
+        <div class="stat-label" data-fr="Profils trouvés" data-en="Profiles Found">Profils trouvés</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-val" id="stat-total">0</div>
+        <div class="stat-label" data-fr="Sites analysés" data-en="Sites Checked">Sites analysés</div>
+      </div>
+      <div class="stat-card yellow">
+        <div class="stat-val" id="stat-time">0s</div>
+        <div class="stat-label" data-fr="Durée" data-en="Duration">Durée</div>
+      </div>
+      <div class="stat-card green">
+        <div class="stat-val" id="stat-cats">0</div>
+        <div class="stat-label" data-fr="Catégories" data-en="Categories">Catégories</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="results-section">
+    <div class="section-title">
+      <span style="color:var(--red)">★</span>
+      <span data-fr="Résultats" data-en="Results">Résultats</span>
+      <span class="badge" id="found-badge">0</span>
+    </div>
+    <div class="cat-tabs" id="cat-tabs"></div>
+    <div class="results-table-wrap" id="results-table"></div>
+    <div class="exports-row" id="exports-row"></div>
+  </div>
+
+</main>
+
+<div class="flag-bottom"></div>
+<footer>
+  <span class="r">Faso</span><span class="g">OSINT</span> <span class="y">★</span>
+  v{{ version }} —
+  <a href="https://github.com/yourusername/fasoosint" target="_blank">github.com/yourusername/fasoosint</a>
+  — For educational & defensive use only
+</footer>
+
+<script>
+let currentLang = 'fr';
+let currentCat  = 'all';
+
+const L = {
+  fr: {
+    searching: "Recherche en cours...",
+    done: "Terminé en",
+    found_on: "profils trouvés sur",
+    sites: "sites",
+    all: "Tous",
+    no_results: "Aucun profil trouvé.",
+    error: "Erreur lors de la recherche.",
+    enter_username: "Veuillez entrer un pseudonyme.",
+    txt: "📄 TXT", csv: "📊 CSV", html: "🌐 HTML",
+  },
+  en: {
+    searching: "Searching...",
+    done: "Completed in",
+    found_on: "profiles found across",
+    sites: "sites",
+    all: "All",
+    no_results: "No profiles found.",
+    error: "Search error.",
+    enter_username: "Please enter a username.",
+    txt: "📄 TXT", csv: "📊 CSV", html: "🌐 HTML",
+  }
+};
+
+function setLang(lang) {
+  currentLang = lang;
+  document.querySelectorAll('[data-fr]').forEach(el => {
+    el.textContent = el.getAttribute('data-' + lang);
+  });
+  document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+}
+
+function termLog(msg, cls = 't-info') {
+  const t = document.getElementById('terminal');
+  t.style.display = 'block';
+  const line = document.createElement('div');
+  line.className = cls;
+  line.textContent = msg;
+  t.appendChild(line);
+  t.scrollTop = t.scrollHeight;
+}
+
+async function startSearch() {
+  const username = document.getElementById('username').value.trim();
+  if (!username) { alert(L[currentLang].enter_username); return; }
+
+  const btn = document.getElementById('btn-search');
+  btn.disabled = true;
+  document.getElementById('terminal').innerHTML = '';
+  document.getElementById('stats-section').style.display = 'none';
+  document.getElementById('results-section').style.display = 'none';
+  document.getElementById('progress-bar-wrap').style.display = 'block';
+  document.getElementById('progress-label').style.display = 'block';
+  document.getElementById('progress-label').textContent = L[currentLang].searching;
+
+  let prog = 0;
+  const iv = setInterval(() => {
+    prog = Math.min(prog + Math.random() * 3, 92);
+    document.getElementById('progress-bar').style.width = prog + '%';
+  }, 200);
+
+  termLog(`[>] Target: ${username}`, 't-info');
+  termLog(`[>] ${L[currentLang].searching}`, 't-info');
+
+  try {
+    const res = await fetch('/api/search', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username,
+        lang: currentLang,
+        region:   document.getElementById('region').value,
+        category: document.getElementById('category').value,
+        export_html: document.getElementById('export-html').checked,
+        export_csv:  document.getElementById('export-csv').checked,
+      })
+    });
+
+    clearInterval(iv);
+    document.getElementById('progress-bar').style.width = '100%';
+
+    const data = await res.json();
+    if (!res.ok) { termLog(`[!] ${data.error}`, 't-err'); btn.disabled = false; return; }
+
+    // Stats
+    document.getElementById('stat-found').textContent = data.found_count;
+    document.getElementById('stat-total').textContent = data.total_checked;
+    document.getElementById('stat-time').textContent  = data.elapsed + 's';
+    document.getElementById('stat-cats').textContent  = Object.keys(data.categories).length;
+    document.getElementById('stats-section').style.display = 'block';
+
+    // Terminal
+    data.found.slice(0, 10).forEach(r => {
+      termLog(`[✅] ${r.site}: ${r.url}`, 't-found');
+    });
+    if (data.found.length > 10) termLog(`[...] +${data.found.length - 10} more`, 't-info');
+    termLog(`[★] ${data.found_count} ${L[currentLang].found_on} ${data.total_checked} ${L[currentLang].sites} — ${data.elapsed}s`, 't-done');
+
+    document.getElementById('progress-label').textContent =
+      `${data.found_count} ${L[currentLang].found_on} ${data.total_checked} ${L[currentLang].sites} — ${data.elapsed}s`;
+
+    buildResults(data);
+
+  } catch(e) {
+    clearInterval(iv);
+    termLog(`[!] ${L[currentLang].error}`, 't-err');
+  }
+
+  btn.disabled = false;
+}
+
+function buildResults(data) {
+  document.getElementById('found-badge').textContent = data.found_count;
+
+  // Tabs
+  const cats = ['all', ...Object.keys(data.categories)];
+  const tabsEl = document.getElementById('cat-tabs');
+  tabsEl.innerHTML = '';
+  cats.forEach(cat => {
+    const count = cat === 'all' ? data.found_count : data.categories[cat].length;
+    const btn = document.createElement('button');
+    btn.className = 'cat-tab' + (cat === 'all' ? ' active' : '');
+    btn.textContent = `${cat === 'all' ? L[currentLang].all : cat} (${count})`;
+    btn.onclick = () => {
+      currentCat = cat;
+      document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderTable(data.found, data.categories);
+    };
+    tabsEl.appendChild(btn);
+  });
+
+  renderTable(data.found, data.categories);
+
+  // Exports
+  const exRow = document.getElementById('exports-row');
+  exRow.innerHTML = '';
+  data.exports.forEach(path => {
+    const ext = path.split('.').pop().toUpperCase();
+    const a = document.createElement('a');
+    a.href = path; a.target = '_blank'; a.className = 'export-btn';
+    a.textContent = ext === 'HTML' ? L[currentLang].html
+                  : ext === 'CSV'  ? L[currentLang].csv
+                  : L[currentLang].txt;
+    exRow.appendChild(a);
+  });
+
+  document.getElementById('results-section').style.display = 'block';
+}
+
+function renderTable(found, categories) {
+  const items = currentCat === 'all' ? found : (categories[currentCat] || []);
+  const wrap  = document.getElementById('results-table');
+
+  if (!items.length) {
+    wrap.innerHTML = `<div class="result-row" style="color:var(--muted)">${L[currentLang].no_results}</div>`;
+    return;
+  }
+
+  wrap.innerHTML = items.map(r => `
+    <div class="result-row">
+      <div class="result-site">✅ ${r.site}</div>
+      <div class="result-url"><a href="${r.url}" target="_blank">${r.url}</a></div>
+      <div class="result-cat">${r.category || ''}</div>
+    </div>
+  `).join('');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('username').addEventListener('keydown', e => {
+    if (e.key === 'Enter') startSearch();
+  });
+});
+</script>
+</body>
+</html>
