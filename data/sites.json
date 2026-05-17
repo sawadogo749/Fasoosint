@@ -1288,14 +1288,6 @@
     "region": "global"
   },
   {
-    "name": "Linktree",
-    "url": "https://linktr.ee/{username}",
-    "error_type": "message",
-    "error_msg": "\"statusCode\":404",
-    "category": "misc",
-    "region": "global"
-  },
-  {
     "name": "LinuxFR.org",
     "url": "https://linuxfr.org/users/{username}",
     "error_type": "status_code",
@@ -2316,14 +2308,6 @@
     "url": "https://velog.io/@{username}/posts",
     "error_type": "status_code",
     "error_msg": "",
-    "category": "misc",
-    "region": "global"
-  },
-  {
-    "name": "Vero",
-    "url": "https://vero.co/{username}",
-    "error_type": "message",
-    "error_msg": "Not Found",
     "category": "misc",
     "region": "global"
   },
