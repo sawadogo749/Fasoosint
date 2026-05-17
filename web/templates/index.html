@@ -37,7 +37,6 @@ body::before {
   pointer-events: none;
 }
 
-/* FLAG */
 .flag-top {
   height: 6px;
   background: linear-gradient(90deg, var(--red) 50%, var(--green) 50%);
@@ -50,7 +49,6 @@ body::before {
   color: var(--yellow); font-size: 14px; line-height: 1;
 }
 
-/* HEADER */
 header {
   position: relative; z-index: 10;
   display: flex; align-items: center; justify-content: space-between;
@@ -79,7 +77,6 @@ header {
 .lang-btn.active { border-color: var(--yellow); color: var(--yellow); background: rgba(255,215,0,.08); }
 .lang-btn:hover { color: var(--text); }
 
-/* HERO */
 .hero {
   position: relative; z-index: 1;
   text-align: center;
@@ -113,14 +110,12 @@ header {
 .badge-pill.g { border-color: rgba(0,154,0,.4); color: var(--green); }
 .badge-pill.y { border-color: rgba(255,215,0,.4); color: var(--yellow); }
 
-/* MAIN */
 main {
   position: relative; z-index: 1;
   max-width: 1100px; margin: 0 auto;
   padding: 2rem 1.5rem;
 }
 
-/* SEARCH PANEL */
 .search-panel {
   background: var(--card);
   border: 1px solid var(--border);
@@ -152,27 +147,19 @@ main {
 }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
-.search-row {
-  display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;
-}
+.search-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
 .input-group { flex: 1; min-width: 200px; }
 .input-group label {
   display: block; font-size: .72rem; color: var(--muted);
-  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: .5rem;
-  font-weight: 600;
+  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: .5rem; font-weight: 600;
 }
 .input-wrap { position: relative; }
-.input-icon {
-  position: absolute; left: 12px; top: 50%;
-  transform: translateY(-50%);
-  color: var(--muted); font-size: .9rem;
-}
+.input-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
 input[type="text"] {
   width: 100%; background: var(--dark);
   border: 1px solid var(--border); border-radius: 6px;
   color: var(--text); font-family: var(--mono); font-size: .95rem;
-  padding: .7rem 1rem .7rem 2.2rem; outline: none;
-  transition: all .2s;
+  padding: .7rem 1rem .7rem 2.2rem; outline: none; transition: all .2s;
 }
 input[type="text"]:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(239,43,45,.1); }
 input[type="text"]::placeholder { color: var(--muted); }
@@ -206,7 +193,6 @@ select option { background: var(--dark); }
 .btn-search:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(239,43,45,.45); }
 .btn-search:disabled { opacity: .4; cursor: not-allowed; transform: none; box-shadow: none; }
 
-/* PROGRESS */
 #progress-wrap { display: none; margin-top: 1.2rem; }
 .progress-track {
   background: var(--dark); border: 1px solid var(--border);
@@ -224,19 +210,16 @@ select option { background: var(--dark); }
   margin-top: .5rem; text-align: center;
 }
 
-/* TERMINAL */
 #terminal {
   display: none;
   background: #020408;
   border: 1px solid var(--border);
   border-left: 3px solid var(--green);
-  border-radius: 8px; padding: 1rem;
-  margin-top: 1rem;
+  border-radius: 8px; padding: 1rem; margin-top: 1rem;
   max-height: 220px; overflow-y: auto;
   font-family: var(--mono); font-size: .8rem; line-height: 1.8;
 }
 #terminal::-webkit-scrollbar { width: 4px; }
-#terminal::-webkit-scrollbar-track { background: var(--dark); }
 #terminal::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 .t-found  { color: var(--green); }
 .t-info   { color: var(--muted); }
@@ -244,18 +227,12 @@ select option { background: var(--dark); }
 .t-err    { color: var(--red); }
 .t-prompt { color: var(--red); }
 
-/* STATS */
 #stats-section { display: none; margin-bottom: 1.5rem; }
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
-}
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
 .stat-card {
   background: var(--card); border: 1px solid var(--border);
   border-radius: 10px; padding: 1.2rem 1.5rem;
-  border-top: 3px solid var(--red);
-  transition: transform .2s;
+  border-top: 3px solid var(--red); transition: transform .2s;
 }
 .stat-card:hover { transform: translateY(-3px); }
 .stat-card.g { border-top-color: var(--green); }
@@ -265,7 +242,6 @@ select option { background: var(--dark); }
 .stat-card.y .stat-val { color: var(--yellow); }
 .stat-label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: .4rem; }
 
-/* SCORE */
 #score-section { display: none; margin-bottom: 1.5rem; }
 .score-box {
   background: var(--card); border: 1px solid var(--border);
@@ -286,34 +262,25 @@ select option { background: var(--dark); }
   color: var(--muted); text-transform: capitalize;
 }
 
-/* AVATARS */
 #avatar-section { display: none; margin-bottom: 1.5rem; }
 .avatar-grid { display: flex; gap: 1.2rem; flex-wrap: wrap; }
 .avatar-item { text-align: center; }
 .avatar-img {
   width: 90px; height: 90px; border-radius: 50%;
   border: 3px solid var(--green);
-  object-fit: cover;
-  background: var(--card2);
-  display: block;
+  object-fit: cover; background: var(--card2); display: block;
 }
 .avatar-source { font-size: .7rem; color: var(--muted); margin-top: .4rem; text-transform: uppercase; letter-spacing: 1px; }
 
-/* EMAILS */
 #email-section { display: none; margin-bottom: 1.5rem; }
-.email-list {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; overflow: hidden;
-}
+.email-list { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
 .email-item {
-  padding: .7rem 1.2rem;
-  border-bottom: 1px solid var(--border);
+  padding: .7rem 1.2rem; border-bottom: 1px solid var(--border);
   font-family: var(--mono); font-size: .85rem;
   color: var(--green); display: flex; align-items: center; gap: .5rem;
 }
 .email-item:last-child { border-bottom: none; }
 
-/* RESULTS */
 #results-section { display: none; }
 .section-header {
   display: flex; align-items: center; justify-content: space-between;
@@ -327,8 +294,7 @@ select option { background: var(--dark); }
 .section-title .star { color: var(--red); }
 .count-badge {
   background: var(--red); color: #fff;
-  font-size: .72rem; padding: .2rem .6rem; border-radius: 12px;
-  font-weight: 700;
+  font-size: .72rem; padding: .2rem .6rem; border-radius: 12px; font-weight: 700;
 }
 
 .cat-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
@@ -341,24 +307,18 @@ select option { background: var(--dark); }
 .cat-tab.active { border-color: var(--yellow); color: var(--yellow); background: rgba(255,215,0,.08); }
 .cat-tab:hover { color: var(--text); }
 
-.results-wrap {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; overflow: hidden;
-}
+.results-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
 .result-header {
   display: grid; grid-template-columns: 200px 1fr 100px;
-  padding: .6rem 1.2rem;
-  background: var(--card2);
+  padding: .6rem 1.2rem; background: var(--card2);
   border-bottom: 1px solid var(--border);
   font-size: .7rem; color: var(--muted);
   text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
 }
 .result-row {
   display: grid; grid-template-columns: 200px 1fr 100px;
-  padding: .65rem 1.2rem;
-  border-bottom: 1px solid var(--border);
-  align-items: center; gap: .5rem;
-  transition: background .15s;
+  padding: .65rem 1.2rem; border-bottom: 1px solid var(--border);
+  align-items: center; gap: .5rem; transition: background .15s;
 }
 .result-row:last-child { border-bottom: none; }
 .result-row:hover { background: rgba(239,43,45,.04); }
@@ -370,7 +330,6 @@ select option { background: var(--dark); }
 .result-url a:hover { color: var(--yellow); }
 .result-cat { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; text-align: right; }
 
-/* EXPORTS */
 .exports-section { margin-top: 1.2rem; }
 .exports-title { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: .6rem; font-weight: 600; }
 .exports-row { display: flex; flex-wrap: wrap; gap: .6rem; }
@@ -383,30 +342,40 @@ select option { background: var(--dark); }
 }
 .export-btn:hover { border-color: var(--yellow); color: var(--yellow); }
 
-/* FLAG BOTTOM */
 .flag-bottom {
   height: 6px;
   background: linear-gradient(90deg, var(--red) 50%, var(--green) 50%);
   position: relative; margin-top: 3rem;
 }
 .flag-bottom::after {
-  content: '★';
-  position: absolute; left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--yellow); font-size: 14px;
+  content: '★'; position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -50%); color: var(--yellow); font-size: 14px;
 }
 
 footer {
   position: relative; z-index: 1;
-  text-align: center; padding: 1.2rem;
+  text-align: center; padding: 1.5rem;
   color: var(--muted); font-family: var(--mono); font-size: .78rem;
   background: var(--dark);
+  border-top: 1px solid var(--border);
 }
 footer .r { color: var(--red); }
 footer .g { color: var(--green); }
 footer .y { color: var(--yellow); }
 footer a { color: var(--green); text-decoration: none; }
 footer a:hover { color: var(--yellow); }
+.bisnaaba {
+  margin-top: .6rem;
+  font-size: .75rem;
+  color: var(--muted);
+  letter-spacing: 1px;
+}
+.bisnaaba strong {
+  color: var(--yellow);
+  font-size: .9rem;
+  letter-spacing: 3px;
+  font-family: var(--mono);
+}
 
 @media (max-width: 700px) {
   .hero-title { font-size: 2.2rem; }
@@ -425,6 +394,11 @@ footer a:hover { color: var(--yellow); }
 
 <header>
   <div class="logo">
+    <svg width="34" height="34" viewBox="0 0 32 32" style="margin-right:10px;flex-shrink:0;border-radius:3px;overflow:hidden">
+      <rect width="32" height="16" fill="#EF2B2D"/>
+      <rect y="16" width="32" height="16" fill="#009A00"/>
+      <polygon points="16,5 18.8,13 27,13 20.6,17.8 23.4,26 16,21.2 8.6,26 11.4,17.8 5,13 13.2,13" fill="#FFD700"/>
+    </svg>
     <span class="r">F</span><span class="g">a</span><span class="y">s</span>
     <span class="r">o</span><span class="g">O</span><span class="y">S</span>
     <span class="r">I</span><span class="g">N</span><span class="y">T</span>
@@ -455,7 +429,6 @@ footer a:hover { color: var(--yellow); }
 
 <main>
 
-  <!-- SEARCH -->
   <div class="search-panel">
     <div class="panel-title">
       <div class="dot"></div>
@@ -606,9 +579,7 @@ footer a:hover { color: var(--yellow); }
         <span class="count-badge" id="found-badge">0</span>
       </div>
     </div>
-
     <div class="cat-tabs" id="cat-tabs"></div>
-
     <div class="results-wrap">
       <div class="result-header">
         <div data-fr="Site" data-en="Site">Site</div>
@@ -617,7 +588,6 @@ footer a:hover { color: var(--yellow); }
       </div>
       <div id="results-table"></div>
     </div>
-
     <div class="exports-section" id="exports-section" style="display:none">
       <div class="exports-title" data-fr="Télécharger les rapports" data-en="Download reports">Télécharger les rapports</div>
       <div class="exports-row" id="exports-row"></div>
@@ -627,11 +597,15 @@ footer a:hover { color: var(--yellow); }
 </main>
 
 <div class="flag-bottom"></div>
+
 <footer>
   <span class="r">Faso</span><span class="g">OSINT</span> <span class="y">★</span>
   v{{ version }} —
   <a href="https://github.com/sawadogo749/Fasoosint" target="_blank">github.com/sawadogo749/Fasoosint</a>
   — For educational &amp; defensive use only
+  <div class="bisnaaba">
+    Un produit de &nbsp;<strong>BISNAABA</strong>&nbsp; 🇧🇫
+  </div>
 </footer>
 
 <script>
@@ -693,12 +667,13 @@ function scoreColor(score) {
 }
 
 function scoreLabel(score) {
-  if (score === 0) return L[currentLang].score_labels[0];
-  if (score <= 20) return L[currentLang].score_labels[1];
-  if (score <= 40) return L[currentLang].score_labels[2];
-  if (score <= 60) return L[currentLang].score_labels[3];
-  if (score <= 80) return L[currentLang].score_labels[4];
-  return L[currentLang].score_labels[5];
+  const labels = L[currentLang].score_labels;
+  if (score === 0) return labels[0];
+  if (score <= 20) return labels[1];
+  if (score <= 40) return labels[2];
+  if (score <= 60) return labels[3];
+  if (score <= 80) return labels[4];
+  return labels[5];
 }
 
 async function startSearch() {
@@ -734,12 +709,12 @@ async function startSearch() {
       body: JSON.stringify({
         username,
         lang: currentLang,
-        region:   document.getElementById('region').value,
-        category: document.getElementById('category').value,
+        region:      document.getElementById('region').value,
+        category:    document.getElementById('category').value,
         export_html: document.getElementById('export-html').checked,
         export_csv:  document.getElementById('export-csv').checked,
-        avatar: document.getElementById('do-avatar').checked,
-        email:  document.getElementById('do-email').checked,
+        avatar:      document.getElementById('do-avatar').checked,
+        email:       document.getElementById('do-email').checked,
       })
     });
 
@@ -778,8 +753,7 @@ async function startSearch() {
     document.getElementById('score-fill').style.width = score + '%';
     document.getElementById('score-fill').style.background = col;
     document.getElementById('score-box').style.borderColor = col + '55';
-    const catsEl = document.getElementById('score-cats');
-    catsEl.innerHTML = Object.keys(data.categories).map(c =>
+    document.getElementById('score-cats').innerHTML = Object.keys(data.categories).map(c =>
       `<span class="score-cat-badge">${c} (${data.categories[c].length})</span>`
     ).join('');
     document.getElementById('score-section').style.display = 'block';
@@ -851,7 +825,8 @@ function buildResults(data) {
     exRow.appendChild(a);
   });
 
-  document.getElementById('exports-section').style.display = data.exports && data.exports.length ? 'block' : 'none';
+  document.getElementById('exports-section').style.display =
+    data.exports && data.exports.length ? 'block' : 'none';
   document.getElementById('results-section').style.display = 'block';
 }
 
