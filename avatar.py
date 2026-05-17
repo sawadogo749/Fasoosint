@@ -3,7 +3,7 @@
 """
 avatar.py — FasoOSINT
 Télécharge automatiquement les photos de profil
-depuis GitHub, Gravatar, et autres plateformes.
+depuis GitHub, Gravatar, GitLab, Keybase, Reddit.
 """
 
 import asyncio
@@ -41,19 +41,9 @@ AVATAR_SOURCES = [
         "type": "direct"
     },
     {
-        "name": "Steam",
-        "url": "https://steamcommunity.com/id/{username}/ajaxaliases/",
-        "type": "direct"
-    },
-    {
         "name": "Reddit",
         "url": "https://www.reddit.com/user/{username}/about.json",
         "type": "reddit"
-    },
-    {
-        "name": "Twitch",
-        "url": "https://www.twitch.tv/{username}",
-        "type": "direct"
     },
 ]
 
@@ -63,8 +53,6 @@ async def download_avatar(session, source, username, output_dir, semaphore):
             if source["type"] == "gravatar":
                 md5 = hashlib.md5(username.lower().encode()).hexdigest()
                 url = source["url"].format(md5=md5)
-            elif source["type"] == "reddit":
-                url = source["url"].format(username=username)
             else:
                 url = source["url"].format(username=username)
 
@@ -80,39 +68,42 @@ async def download_avatar(session, source, username, output_dir, semaphore):
 
                 content_type = resp.headers.get("content-type", "")
 
-                # Reddit — extraire l'URL de l'avatar depuis le JSON
+                # Reddit — extraire l'URL avatar depuis JSON
                 if source["type"] == "reddit":
                     try:
                         data = await resp.json()
                         icon = data.get("data", {}).get("icon_img", "")
-                        if icon and "www.redditstatic.com" not in icon:
+                        if icon and "www.redditstatic.com" not in icon and icon.strip():
                             async with session.get(icon, timeout=aiohttp.ClientTimeout(total=10),
                                                    ssl=False) as img_resp:
                                 if img_resp.status == 200:
                                     img_data = await img_resp.read()
-                                    path = output_dir / f"{username}_avatar_reddit.jpg"
-                                    with open(path, "wb") as f:
-                                        f.write(img_data)
-                                    return {"source": source["name"], "path": str(path), "url": icon}
+                                    if len(img_data) > 1000:
+                                        path = output_dir / f"{username}_avatar_reddit.jpg"
+                                        with open(path, "wb") as f:
+                                            f.write(img_data)
+                                        return {"source": source["name"], "path": str(path), "url": icon}
                     except Exception:
                         return None
+                    return None
 
                 # Image directe
-                if "image" in content_type or len(await resp.read()) > 1000:
-                    resp = await session.get(url, timeout=aiohttp.ClientTimeout(total=10),
-                                             ssl=False, headers=headers)
-                    img_data = await resp.read()
-                    if len(img_data) < 500:
-                        return None
-                    ext = "jpg"
-                    if "png" in content_type:
-                        ext = "png"
-                    elif "gif" in content_type:
-                        ext = "gif"
-                    path = output_dir / f"{username}_avatar_{source['name'].lower()}.{ext}"
-                    with open(path, "wb") as f:
-                        f.write(img_data)
-                    return {"source": source["name"], "path": str(path), "url": url}
+                img_data = await resp.read()
+
+                # Ignore les images trop petites (avatars par défaut)
+                if len(img_data) < 2000:
+                    return None
+
+                ext = "jpg"
+                if "png" in content_type:
+                    ext = "png"
+                elif "gif" in content_type:
+                    ext = "gif"
+
+                path = output_dir / f"{username}_avatar_{source['name'].lower()}.{ext}"
+                with open(path, "wb") as f:
+                    f.write(img_data)
+                return {"source": source["name"], "path": str(path), "url": url}
 
         except Exception:
             return None
@@ -150,7 +141,6 @@ async def fetch_all_avatars(username, output_dir):
         print(f"  {RED}★ {YELLOW}Aucune photo de profil publique trouvée{RESET}")
     print(f"  {YELLOW}{'━'*62}{RESET}\n")
 
-    # Sauvegarde JSON
     report = {
         "username": username,
         "avatars_found": len(found_avatars),
@@ -164,7 +154,7 @@ async def fetch_all_avatars(username, output_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print(f"Usage: python3 avatar.py <username> [output_dir]")
+        print("Usage: python3 avatar.py <username> [output_dir]")
         sys.exit(1)
     username = sys.argv[1]
     output_dir = sys.argv[2] if len(sys.argv) > 2 else "output"
