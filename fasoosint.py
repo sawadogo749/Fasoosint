@@ -59,6 +59,9 @@ MESSAGES = {
         "variants_found": "profils trouvés",
         "avatar_search": "Recherche photos de profil",
         "email_search": "Recherche emails",
+        "batch_start": "MODE BATCH",
+        "batch_summary": "RÉSUMÉ BATCH",
+        "batch_done": "Batch terminé",
     },
     "en": {
         "searching": "🔍 Searching for",
@@ -82,6 +85,9 @@ MESSAGES = {
         "variants_found": "profiles found",
         "avatar_search": "Searching profile pictures",
         "email_search": "Searching emails",
+        "batch_start": "BATCH MODE",
+        "batch_summary": "BATCH SUMMARY",
+        "batch_done": "Batch completed",
     }
 }
 
@@ -113,12 +119,7 @@ def generate_variants(username):
         ]
     else:
         base = parts[0]
-        variants = [
-            base,
-            base + "1",
-            base + "2",
-            base + "123",
-        ]
+        variants = [base, base + "1", base + "2", base + "123"]
     seen = []
     for v in variants:
         if v not in seen:
@@ -433,6 +434,32 @@ def save_pdf(username, found, lang, output_dir, elapsed, score, label):
     except ImportError:
         print(f"  {YELLOW}[!] reportlab non installé. Lance : pip install reportlab{RESET}")
 
+def run_single(username, args, lang, msg, output_dir):
+    results, found, elapsed, score, label = asyncio.run(
+        run_search(username, lang,
+                   concurrency=args.concurrency,
+                   filter_region=args.region,
+                   filter_category=args.category,
+                   timeout=args.timeout)
+    )
+    if args.all or args.txt:
+        save_txt(username, found, lang, output_dir, score, label)
+    if args.all or args.csv:
+        save_csv(username, results, lang, output_dir)
+    if args.all or args.html:
+        save_html(username, found, results, lang, output_dir, elapsed, score, label)
+    if args.all or args.pdf:
+        save_pdf(username, found, lang, output_dir, elapsed, score, label)
+    if not (args.all or args.txt or args.csv or args.html or args.pdf):
+        save_txt(username, found, lang, output_dir, score, label)
+    if args.avatar or args.all:
+        from avatar import fetch_all_avatars
+        asyncio.run(fetch_all_avatars(username, output_dir))
+    if args.email or args.all:
+        from email_osint import search_emails
+        asyncio.run(search_emails(username, output_dir=str(output_dir)))
+    return found, score, label
+
 def main():
     parser = argparse.ArgumentParser(
         description="FasoOSINT — OSINT Username Intelligence Tool",
@@ -440,15 +467,13 @@ def main():
         epilog="""
 Exemples:
   python3 fasoosint.py johndoe
-  python3 fasoosint.py johndoe --lang en --html
-  python3 fasoosint.py johndoe --all
+  python3 fasoosint.py johndoe --lang en --all
   python3 fasoosint.py "john doe" --variants --lang fr
-  python3 fasoosint.py johndoe --avatar
-  python3 fasoosint.py johndoe --email
-  python3 fasoosint.py johndoe --all --avatar --email
+  python3 fasoosint.py johndoe --avatar --email
+  python3 fasoosint.py --batch liste.txt --lang fr --all
         """
     )
-    parser.add_argument("username", help="Pseudonyme à rechercher")
+    parser.add_argument("username", nargs="?", help="Pseudonyme à rechercher")
     parser.add_argument("--lang", choices=["fr", "en"], default="fr")
     parser.add_argument("--txt", action="store_true")
     parser.add_argument("--csv", action="store_true")
@@ -456,8 +481,9 @@ Exemples:
     parser.add_argument("--pdf", action="store_true")
     parser.add_argument("--all", action="store_true")
     parser.add_argument("--variants", action="store_true")
-    parser.add_argument("--avatar", action="store_true", help="Télécharger les photos de profil")
-    parser.add_argument("--email", action="store_true", help="Rechercher les emails associés")
+    parser.add_argument("--avatar", action="store_true")
+    parser.add_argument("--email", action="store_true")
+    parser.add_argument("--batch", help="Fichier texte avec un username par ligne")
     parser.add_argument("--region", help="africa | global")
     parser.add_argument("--category", help="social | gaming | coding | africa ...")
     parser.add_argument("--timeout", type=int, default=10)
@@ -476,8 +502,38 @@ Exemples:
     output_dir = Path(args.output)
     output_dir.mkdir(exist_ok=True)
 
+    # MODE BATCH
+    if args.batch:
+        batch_file = Path(args.batch)
+        if not batch_file.exists():
+            print(f"  {RED}[!] Fichier introuvable : {args.batch}{RESET}")
+            sys.exit(1)
+        usernames = [u.strip() for u in batch_file.read_text().splitlines() if u.strip()]
+        print(f"  {YELLOW}{'━'*62}{RESET}")
+        print(f"  {RED}★ {GREEN}{msg['batch_start']} : {YELLOW}{len(usernames)} usernames {RED}★{RESET}")
+        print(f"  {YELLOW}{'━'*62}{RESET}\n")
+        batch_results = {}
+        for i, username in enumerate(usernames, 1):
+            print(f"\n  {RED}★ {GREEN}[{i}/{len(usernames)}] {WHITE}{username}{RESET}")
+            found, score, label = run_single(username, args, lang, msg, output_dir)
+            batch_results[username] = {"found": len(found), "score": score, "label": label}
+        print(f"\n  {YELLOW}{'━'*62}{RESET}")
+        print(f"  {RED}★ {GREEN}{msg['batch_summary']} :{RESET}")
+        for u, data in batch_results.items():
+            sc = GREEN if data['score'] <= 20 else (YELLOW if data['score'] <= 50 else RED)
+            print(f"  {YELLOW}→ {WHITE}{u:<20}{YELLOW} : {sc}{data['found']} profils — Score {data['score']}/100 — {data['label']}{RESET}")
+        print(f"  {YELLOW}{'━'*62}{RESET}\n")
+        report_path = output_dir / "batch_summary.json"
+        with open(report_path, "w", encoding="utf-8") as f:
+            json.dump(batch_results, f, ensure_ascii=False, indent=2)
+        print(f"  {GREEN}💾 Résumé batch : {report_path}{RESET}\n")
+        sys.exit(0)
+
     # MODE VARIANTS
     if args.variants:
+        if not args.username:
+            print(f"  {RED}[!] Spécifie un username avec --variants{RESET}")
+            sys.exit(1)
         variants = generate_variants(args.username)
         print(f"  {YELLOW}{'━'*62}{RESET}")
         print(f"  {RED}★ {GREEN}{msg['variants_testing']} : {WHITE}{', '.join(variants)}{RESET}")
@@ -485,22 +541,9 @@ Exemples:
         all_found = {}
         for variant in variants:
             print(f"\n  {RED}★ {GREEN}→ {WHITE}{variant}{RESET}")
-            results, found, elapsed, score, label = asyncio.run(
-                run_search(variant, lang,
-                           concurrency=args.concurrency,
-                           filter_region=args.region,
-                           filter_category=args.category,
-                           timeout=args.timeout)
-            )
+            found, score, label = run_single(variant, args, lang, msg, output_dir)
             if found:
                 all_found[variant] = {"found": found, "score": score, "label": label}
-                save_txt(variant, found, lang, output_dir, score, label)
-                if args.all or args.html:
-                    save_html(variant, found, results, lang, output_dir, elapsed, score, label)
-                if args.all or args.csv:
-                    save_csv(variant, results, lang, output_dir)
-                if args.all or args.pdf:
-                    save_pdf(variant, found, lang, output_dir, elapsed, score, label)
         print(f"\n  {YELLOW}{'━'*62}{RESET}")
         print(f"  {RED}★ {GREEN}{msg['variants_summary']} :{RESET}")
         for v, data in all_found.items():
@@ -512,40 +555,11 @@ Exemples:
         sys.exit(0)
 
     # MODE NORMAL
-    results, found, elapsed, score, label = asyncio.run(
-        run_search(args.username, lang,
-                   concurrency=args.concurrency,
-                   filter_region=args.region,
-                   filter_category=args.category,
-                   timeout=args.timeout)
-    )
+    if not args.username:
+        parser.print_help()
+        sys.exit(1)
 
-    if args.all or args.txt:
-        save_txt(args.username, found, lang, output_dir, score, label)
-    if args.all or args.csv:
-        save_csv(args.username, results, lang, output_dir)
-    if args.all or args.html:
-        save_html(args.username, found, results, lang, output_dir, elapsed, score, label)
-    if args.all or args.pdf:
-        save_pdf(args.username, found, lang, output_dir, elapsed, score, label)
-    if not (args.all or args.txt or args.csv or args.html or args.pdf):
-        save_txt(args.username, found, lang, output_dir, score, label)
-
-    # MODULE AVATAR
-    if args.avatar or args.all:
-        print(f"\n  {YELLOW}{'━'*62}{RESET}")
-        print(f"  {RED}★ {GREEN}{msg['avatar_search']} : {WHITE}{args.username}{RESET}")
-        print(f"  {YELLOW}{'━'*62}{RESET}\n")
-        from avatar import fetch_all_avatars
-        asyncio.run(fetch_all_avatars(args.username, output_dir))
-
-    # MODULE EMAIL
-    if args.email or args.all:
-        print(f"\n  {YELLOW}{'━'*62}{RESET}")
-        print(f"  {RED}★ {GREEN}{msg['email_search']} : {WHITE}{args.username}{RESET}")
-        print(f"  {YELLOW}{'━'*62}{RESET}\n")
-        from email_osint import search_emails
-        asyncio.run(search_emails(args.username, output_dir=str(output_dir)))
+    run_single(args.username, args, lang, msg, output_dir)
 
 if __name__ == "__main__":
     main()
