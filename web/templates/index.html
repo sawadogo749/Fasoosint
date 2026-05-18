@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FasoOSINT — Username Intelligence</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='16' fill='%23EF2B2D'/><rect y='16' width='32' height='16' fill='%23009A00'/><polygon points='16,5 18.8,13 27,13 20.6,17.8 23.4,26 16,21.2 8.6,26 11.4,17.8 5,13 13.2,13' fill='%23FFD700'/></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --red:    #EF2B2D;
   --green:  #009A00;
   --yellow: #FFD700;
-  --dark:   #060a0f;
-  --card:   #0c1117;
-  --card2:  #111820;
+  --dark:   #05080d;
+  --card:   #0a0e15;
+  --card2:  #0f1420;
   --border: #1a2535;
   --text:   #c8d8e8;
   --muted:  #4a6080;
@@ -31,8 +32,8 @@ body::before {
   content: '';
   position: fixed; inset: 0; z-index: 0;
   background-image:
-    linear-gradient(rgba(239,43,45,.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,154,0,.02) 1px, transparent 1px);
+    linear-gradient(rgba(0,154,0,.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239,43,45,.015) 1px, transparent 1px);
   background-size: 40px 40px;
   pointer-events: none;
 }
@@ -54,7 +55,7 @@ header {
   display: flex; align-items: center; justify-content: space-between;
   padding: 1rem 2rem;
   border-bottom: 1px solid var(--border);
-  background: rgba(6,10,15,.97);
+  background: rgba(5,8,13,.98);
   backdrop-filter: blur(12px);
 }
 .logo {
@@ -67,6 +68,23 @@ header {
 .logo .g { color: var(--green); }
 .logo .y { color: var(--yellow); }
 .logo-ver { color: var(--muted); font-size: .75rem; margin-left: 8px; }
+
+.header-right { display: flex; align-items: center; gap: 12px; }
+.cyber-status {
+  display: flex; align-items: center; gap: 5px;
+  font-size: .72rem; color: var(--green);
+  border: 1px solid rgba(0,154,0,.3);
+  padding: 4px 10px; border-radius: 3px;
+  background: rgba(0,154,0,.05);
+  font-family: var(--mono); letter-spacing: 1px;
+}
+.cyber-status .dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  animation: blink 1.5s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+
 .lang-toggle { display: flex; gap: .4rem; }
 .lang-btn {
   background: var(--card2); border: 1px solid var(--border);
@@ -82,33 +100,40 @@ header {
   text-align: center;
   padding: 3rem 1.5rem 2rem;
   border-bottom: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(239,43,45,.04) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(239,43,45,.05) 0%, transparent 70%);
 }
 .hero-title {
   font-family: var(--mono);
   font-size: 3.5rem;
   letter-spacing: 4px;
-  margin-bottom: .5rem;
+  margin-bottom: .4rem;
   line-height: 1;
 }
 .hero-title .r { color: var(--red); }
 .hero-title .g { color: var(--green); }
 .hero-title .y { color: var(--yellow); }
-.hero-sub {
-  font-size: 1rem; color: var(--muted);
-  letter-spacing: 2px; text-transform: uppercase;
-  margin-bottom: 1.5rem;
-}
-.hero-badges { display: flex; justify-content: center; gap: .6rem; flex-wrap: wrap; }
-.badge-pill {
-  background: var(--card2); border: 1px solid var(--border);
+.hero-cyber {
+  font-family: var(--mono);
   font-size: .72rem; color: var(--muted);
-  padding: .25rem .7rem; border-radius: 20px;
-  letter-spacing: 1px; text-transform: uppercase;
+  letter-spacing: 3px; text-transform: uppercase;
+  margin-bottom: .4rem;
 }
-.badge-pill.r { border-color: rgba(239,43,45,.4); color: var(--red); }
-.badge-pill.g { border-color: rgba(0,154,0,.4); color: var(--green); }
-.badge-pill.y { border-color: rgba(255,215,0,.4); color: var(--yellow); }
+.hero-cyber span { color: var(--green); }
+.hero-matrix {
+  font-family: var(--mono);
+  font-size: .62rem; color: rgba(0,154,0,.35);
+  letter-spacing: 2px; margin-bottom: 1.5rem;
+  overflow: hidden; white-space: nowrap;
+}
+.hero-badges { display: flex; justify-content: center; gap: .5rem; flex-wrap: wrap; }
+.badge-pill {
+  font-size: .65rem; padding: .25rem .7rem; border-radius: 3px;
+  letter-spacing: 1px; text-transform: uppercase;
+  font-family: var(--mono);
+}
+.badge-pill.r { color: var(--red); border: 1px solid rgba(239,43,45,.3); background: rgba(239,43,45,.05); }
+.badge-pill.g { color: var(--green); border: 1px solid rgba(0,154,0,.3); background: rgba(0,154,0,.05); }
+.badge-pill.y { color: var(--yellow); border: 1px solid rgba(255,215,0,.3); background: rgba(255,215,0,.05); }
 
 main {
   position: relative; z-index: 1;
@@ -119,7 +144,7 @@ main {
 .search-panel {
   background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 2rem;
   margin-bottom: 1.5rem;
   position: relative; overflow: hidden;
@@ -134,40 +159,52 @@ main {
 @keyframes shimmer { 0%{background-position:0%} 100%{background-position:200%} }
 
 .panel-title {
-  font-size: 1.1rem; font-weight: 700;
+  font-size: 1rem; font-weight: 700;
   color: var(--text); margin-bottom: 1.5rem;
   display: flex; align-items: center; gap: .5rem;
   text-transform: uppercase; letter-spacing: 2px;
+  font-family: var(--mono);
 }
 .panel-title .dot {
   width: 8px; height: 8px; border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 8px var(--red);
+  background: var(--red); box-shadow: 0 0 8px var(--red);
   animation: blink 1.5s ease-in-out infinite;
 }
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
 
 .search-row { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
 .input-group { flex: 1; min-width: 200px; }
 .input-group label {
-  display: block; font-size: .72rem; color: var(--muted);
-  text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: .5rem; font-weight: 600;
+  display: block; font-size: .7rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-bottom: .5rem; font-weight: 600; font-family: var(--mono);
 }
-.input-wrap { position: relative; }
-.input-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--muted); }
-input[type="text"] {
-  width: 100%; background: var(--dark);
+.terminal-input-wrap {
+  display: flex; align-items: center;
+  background: var(--dark);
   border: 1px solid var(--border); border-radius: 6px;
-  color: var(--text); font-family: var(--mono); font-size: .95rem;
-  padding: .7rem 1rem .7rem 2.2rem; outline: none; transition: all .2s;
+  overflow: hidden; transition: border-color .2s;
 }
-input[type="text"]:focus { border-color: var(--red); box-shadow: 0 0 0 3px rgba(239,43,45,.1); }
+.terminal-input-wrap:focus-within { border-color: var(--red); box-shadow: 0 0 0 3px rgba(239,43,45,.1); }
+.terminal-prompt-sym {
+  padding: 0 10px; color: var(--green);
+  font-family: var(--mono); font-size: .9rem;
+  background: rgba(0,154,0,.05); border-right: 1px solid var(--border);
+  height: 40px; display: flex; align-items: center;
+  white-space: nowrap;
+}
+input[type="text"] {
+  flex: 1; background: transparent;
+  border: none; color: var(--text);
+  font-family: var(--mono); font-size: .9rem;
+  padding: .7rem 1rem; outline: none;
+}
 input[type="text"]::placeholder { color: var(--muted); }
 select {
   width: 100%; background: var(--dark);
   border: 1px solid var(--border); border-radius: 6px;
-  color: var(--text); font-family: var(--ui); font-size: .9rem;
+  color: var(--text); font-family: var(--mono); font-size: .82rem;
   padding: .7rem 1rem; outline: none; transition: all .2s; cursor: pointer;
+  height: 40px;
 }
 select:focus { border-color: var(--green); }
 select option { background: var(--dark); }
@@ -178,35 +215,42 @@ select option { background: var(--dark); }
 }
 .checkbox-group { display: flex; align-items: center; gap: .5rem; cursor: pointer; }
 .checkbox-group input[type="checkbox"] { accent-color: var(--yellow); width: 15px; height: 15px; }
-.checkbox-group span { font-size: .82rem; color: var(--muted); cursor: pointer; font-weight: 600; }
+.checkbox-group span { font-size: .8rem; color: var(--muted); cursor: pointer; font-weight: 600; font-family: var(--mono); }
 
 .btn-search {
   display: inline-flex; align-items: center; gap: .6rem;
-  background: linear-gradient(135deg, var(--red) 0%, #c0001a 100%);
-  color: #fff; font-family: var(--ui); font-weight: 700;
-  font-size: 1rem; letter-spacing: 2px;
+  background: var(--red);
+  color: #fff; font-family: var(--mono); font-weight: 700;
+  font-size: .9rem; letter-spacing: 2px;
   border: none; border-radius: 6px;
   padding: .85rem 2.5rem; cursor: pointer;
   transition: all .2s; text-transform: uppercase;
-  box-shadow: 0 4px 20px rgba(239,43,45,.35);
+  position: relative; overflow: hidden;
 }
-.btn-search:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(239,43,45,.45); }
+.btn-search::before {
+  content: '';
+  position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.15), transparent);
+  animation: shine 2.5s infinite;
+}
+@keyframes shine { 0%{left:-100%} 100%{left:100%} }
+.btn-search:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(239,43,45,.4); }
 .btn-search:disabled { opacity: .4; cursor: not-allowed; transform: none; box-shadow: none; }
 
 #progress-wrap { display: none; margin-top: 1.2rem; }
 .progress-track {
   background: var(--dark); border: 1px solid var(--border);
-  border-radius: 4px; overflow: hidden; height: 4px;
+  border-radius: 3px; overflow: hidden; height: 3px;
 }
 .progress-fill {
-  height: 4px; width: 0%;
+  height: 3px; width: 0%;
   background: linear-gradient(90deg, var(--red), var(--yellow), var(--green));
   transition: width .3s;
   animation: pulse-bar 1.5s ease-in-out infinite;
 }
 @keyframes pulse-bar { 0%,100%{opacity:1} 50%{opacity:.5} }
 #progress-label {
-  font-family: var(--mono); font-size: .78rem; color: var(--muted);
+  font-family: var(--mono); font-size: .75rem; color: var(--muted);
   margin-top: .5rem; text-align: center;
 }
 
@@ -215,9 +259,9 @@ select option { background: var(--dark); }
   background: #020408;
   border: 1px solid var(--border);
   border-left: 3px solid var(--green);
-  border-radius: 8px; padding: 1rem; margin-top: 1rem;
+  border-radius: 6px; padding: 1rem; margin-top: 1rem;
   max-height: 220px; overflow-y: auto;
-  font-family: var(--mono); font-size: .8rem; line-height: 1.8;
+  font-family: var(--mono); font-size: .78rem; line-height: 1.9;
 }
 #terminal::-webkit-scrollbar { width: 4px; }
 #terminal::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
@@ -231,35 +275,43 @@ select option { background: var(--dark); }
 .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
 .stat-card {
   background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; padding: 1.2rem 1.5rem;
+  border-radius: 8px; padding: 1.2rem 1.5rem;
   border-top: 3px solid var(--red); transition: transform .2s;
+  position: relative; overflow: hidden;
+}
+.stat-card::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
 }
 .stat-card:hover { transform: translateY(-3px); }
 .stat-card.g { border-top-color: var(--green); }
+.stat-card.g::after { background: linear-gradient(90deg, transparent, var(--green), transparent); }
 .stat-card.y { border-top-color: var(--yellow); }
+.stat-card.y::after { background: linear-gradient(90deg, transparent, var(--yellow), transparent); }
 .stat-val { font-family: var(--mono); font-size: 2rem; color: var(--red); line-height: 1; }
 .stat-card.g .stat-val { color: var(--green); }
 .stat-card.y .stat-val { color: var(--yellow); }
-.stat-label { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: .4rem; }
+.stat-label { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: .4rem; font-family: var(--mono); }
 
 #score-section { display: none; margin-bottom: 1.5rem; }
 .score-box {
   background: var(--card); border: 1px solid var(--border);
-  border-radius: 10px; padding: 1.5rem 2rem;
+  border-radius: 8px; padding: 1.5rem 2rem;
   display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;
 }
 .score-left { min-width: 120px; }
 .score-num { font-family: var(--mono); font-size: 3.5rem; line-height: 1; }
 .score-denom { font-size: 1.2rem; color: var(--muted); }
-.score-lbl { font-size: .85rem; margin-top: .3rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+.score-lbl { font-size: .78rem; margin-top: .3rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-family: var(--mono); }
 .score-right { flex: 1; min-width: 200px; }
-.score-track { background: var(--dark); border-radius: 6px; height: 10px; overflow: hidden; margin-bottom: .8rem; }
-.score-fill { height: 10px; border-radius: 6px; transition: width 1s ease; }
+.score-track { background: var(--dark); border-radius: 4px; height: 8px; overflow: hidden; margin-bottom: .8rem; }
+.score-fill { height: 8px; border-radius: 4px; transition: width 1s ease; }
 .score-cats { display: flex; flex-wrap: wrap; gap: .4rem; }
 .score-cat-badge {
-  font-size: .7rem; padding: .2rem .6rem; border-radius: 12px;
+  font-size: .65rem; padding: .2rem .6rem; border-radius: 3px;
   background: var(--card2); border: 1px solid var(--border);
-  color: var(--muted); text-transform: capitalize;
+  color: var(--muted); text-transform: capitalize; font-family: var(--mono);
 }
 
 #avatar-section { display: none; margin-bottom: 1.5rem; }
@@ -270,16 +322,7 @@ select option { background: var(--dark); }
   border: 3px solid var(--green);
   object-fit: cover; background: var(--card2); display: block;
 }
-.avatar-source { font-size: .7rem; color: var(--muted); margin-top: .4rem; text-transform: uppercase; letter-spacing: 1px; }
-
-#email-section { display: none; margin-bottom: 1.5rem; }
-.email-list { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-.email-item {
-  padding: .7rem 1.2rem; border-bottom: 1px solid var(--border);
-  font-family: var(--mono); font-size: .85rem;
-  color: var(--green); display: flex; align-items: center; gap: .5rem;
-}
-.email-item:last-child { border-bottom: none; }
+.avatar-source { font-size: .65rem; color: var(--muted); margin-top: .4rem; text-transform: uppercase; letter-spacing: 1px; font-family: var(--mono); }
 
 #results-section { display: none; }
 .section-header {
@@ -287,58 +330,64 @@ select option { background: var(--dark); }
   margin-bottom: 1rem; flex-wrap: wrap; gap: .5rem;
 }
 .section-title {
-  font-size: 1rem; font-weight: 700; color: var(--text);
+  font-size: .9rem; font-weight: 700; color: var(--text);
   display: flex; align-items: center; gap: .5rem;
-  text-transform: uppercase; letter-spacing: 2px;
+  text-transform: uppercase; letter-spacing: 2px; font-family: var(--mono);
 }
 .section-title .star { color: var(--red); }
 .count-badge {
   background: var(--red); color: #fff;
-  font-size: .72rem; padding: .2rem .6rem; border-radius: 12px; font-weight: 700;
+  font-size: .68rem; padding: .2rem .6rem; border-radius: 3px; font-weight: 700;
 }
 
 .cat-tabs { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
 .cat-tab {
   background: var(--card2); border: 1px solid var(--border);
-  color: var(--muted); font-family: var(--ui); font-size: .8rem;
-  padding: .35rem .9rem; border-radius: 20px; cursor: pointer;
-  transition: all .2s; text-transform: capitalize; font-weight: 600;
+  color: var(--muted); font-family: var(--mono); font-size: .75rem;
+  padding: .3rem .8rem; border-radius: 3px; cursor: pointer;
+  transition: all .2s; text-transform: capitalize;
 }
 .cat-tab.active { border-color: var(--yellow); color: var(--yellow); background: rgba(255,215,0,.08); }
 .cat-tab:hover { color: var(--text); }
 
-.results-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.results-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
 .result-header {
-  display: grid; grid-template-columns: 200px 1fr 100px;
+  display: grid; grid-template-columns: 220px 1fr 100px;
   padding: .6rem 1.2rem; background: var(--card2);
   border-bottom: 1px solid var(--border);
-  font-size: .7rem; color: var(--muted);
-  text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+  font-size: .68rem; color: var(--muted);
+  text-transform: uppercase; letter-spacing: 1px; font-family: var(--mono);
 }
 .result-row {
-  display: grid; grid-template-columns: 200px 1fr 100px;
+  display: grid; grid-template-columns: 220px 1fr 100px;
   padding: .65rem 1.2rem; border-bottom: 1px solid var(--border);
   align-items: center; gap: .5rem; transition: background .15s;
 }
 .result-row:last-child { border-bottom: none; }
 .result-row:hover { background: rgba(239,43,45,.04); }
-.result-site { font-weight: 700; font-size: .88rem; color: var(--text); }
+.result-site {
+  font-weight: 700; font-size: .85rem; color: var(--text);
+  display: flex; align-items: center; gap: 6px;
+}
+.result-site img { width: 16px; height: 16px; border-radius: 2px; }
+.result-site a { color: var(--text); text-decoration: none; }
+.result-site a:hover { color: var(--yellow); }
 .result-url a {
   color: var(--green); text-decoration: none;
-  font-family: var(--mono); font-size: .78rem; word-break: break-all;
+  font-family: var(--mono); font-size: .75rem; word-break: break-all;
 }
 .result-url a:hover { color: var(--yellow); }
-.result-cat { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; text-align: right; }
+.result-cat { font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; text-align: right; font-family: var(--mono); }
 
 .exports-section { margin-top: 1.2rem; }
-.exports-title { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: .6rem; font-weight: 600; }
+.exports-title { font-size: .68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: .6rem; font-family: var(--mono); }
 .exports-row { display: flex; flex-wrap: wrap; gap: .6rem; }
 .export-btn {
   display: inline-flex; align-items: center; gap: .4rem;
   background: var(--card2); border: 1px solid var(--border);
-  color: var(--text); font-family: var(--ui); font-size: .82rem;
-  padding: .5rem 1.1rem; border-radius: 6px; text-decoration: none;
-  transition: all .2s; font-weight: 600;
+  color: var(--text); font-family: var(--mono); font-size: .78rem;
+  padding: .5rem 1.1rem; border-radius: 4px; text-decoration: none;
+  transition: all .2s;
 }
 .export-btn:hover { border-color: var(--yellow); color: var(--yellow); }
 
@@ -355,9 +404,8 @@ select option { background: var(--dark); }
 footer {
   position: relative; z-index: 1;
   text-align: center; padding: 1.5rem;
-  color: var(--muted); font-family: var(--mono); font-size: .78rem;
-  background: var(--dark);
-  border-top: 1px solid var(--border);
+  color: var(--muted); font-family: var(--mono); font-size: .75rem;
+  background: var(--dark); border-top: 1px solid var(--border);
 }
 footer .r { color: var(--red); }
 footer .g { color: var(--green); }
@@ -365,17 +413,10 @@ footer .y { color: var(--yellow); }
 footer a { color: var(--green); text-decoration: none; }
 footer a:hover { color: var(--yellow); }
 .bisnaaba {
-  margin-top: .6rem;
-  font-size: .75rem;
-  color: var(--muted);
+  margin-top: .6rem; font-size: .72rem; color: var(--muted);
   letter-spacing: 1px;
 }
-.bisnaaba strong {
-  color: var(--yellow);
-  font-size: .9rem;
-  letter-spacing: 3px;
-  font-family: var(--mono);
-}
+.bisnaaba strong { color: var(--yellow); font-size: .85rem; letter-spacing: 3px; }
 
 @media (max-width: 700px) {
   .hero-title { font-size: 2.2rem; }
@@ -385,6 +426,7 @@ footer a:hover { color: var(--yellow); }
   .result-row { grid-template-columns: 1fr; }
   .result-cat { text-align: left; }
   .score-box { flex-direction: column; gap: 1rem; }
+  .cyber-status { display: none; }
 }
 </style>
 </head>
@@ -404,9 +446,14 @@ footer a:hover { color: var(--yellow); }
     <span class="r">I</span><span class="g">N</span><span class="y">T</span>
     <span class="logo-ver">v{{ version }}</span>
   </div>
-  <div class="lang-toggle">
-    <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
-    <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+  <div class="header-right">
+    <div class="cyber-status">
+      <div class="dot"></div>SYSTEM ONLINE
+    </div>
+    <div class="lang-toggle">
+      <button class="lang-btn active" id="btn-fr" onclick="setLang('fr')">🇫🇷 FR</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">🇬🇧 EN</button>
+    </div>
   </div>
 </header>
 
@@ -414,16 +461,20 @@ footer a:hover { color: var(--yellow); }
   <div class="hero-title">
     <span class="r">Faso</span><span class="g">OSINT</span><span class="y"> ★</span>
   </div>
-  <div class="hero-sub" data-fr="Outil OSINT de recherche de pseudonymes" data-en="Username OSINT Intelligence Tool">
-    Outil OSINT de recherche de pseudonymes
+  <div class="hero-cyber">
+    OSINT <span>//</span>
+    <span data-fr="RENSEIGNEMENT NUMÉRIQUE" data-en="DIGITAL INTELLIGENCE">RENSEIGNEMENT NUMÉRIQUE</span>
+    <span>//</span> DIGITAL FOOTPRINT
   </div>
+  <div class="hero-matrix">[ SCANNING ] // 618+ PLATFORMS // AFRICA & GLOBAL // SECURE & ETHICAL // BISNAABA</div>
   <div class="hero-badges">
-    <span class="badge-pill r">618+ Sites</span>
-    <span class="badge-pill g" data-fr="0 Faux positif" data-en="0 False positive">0 Faux positif</span>
-    <span class="badge-pill y" data-fr="Bilingue Fr/En" data-en="Bilingual Fr/En">Bilingue Fr/En</span>
-    <span class="badge-pill r" data-fr="Plateformes africaines" data-en="African platforms">Plateformes africaines</span>
-    <span class="badge-pill g" data-fr="Score OSINT /100" data-en="OSINT Score /100">Score OSINT /100</span>
-    <span class="badge-pill y">PDF / HTML / CSV</span>
+    <span class="badge-pill r">618+ sites</span>
+    <span class="badge-pill g" data-fr="0 faux positif" data-en="0 false positive">0 faux positif</span>
+    <span class="badge-pill y" data-fr="bilingue fr/en" data-en="bilingual fr/en">bilingue fr/en</span>
+    <span class="badge-pill r" data-fr="plateformes africaines" data-en="african platforms">plateformes africaines</span>
+    <span class="badge-pill g" data-fr="score osint /100" data-en="osint score /100">score osint /100</span>
+    <span class="badge-pill y">pdf / html / csv</span>
+    <span class="badge-pill r">https secured</span>
   </div>
 </div>
 
@@ -432,19 +483,19 @@ footer a:hover { color: var(--yellow); }
   <div class="search-panel">
     <div class="panel-title">
       <div class="dot"></div>
-      <span data-fr="Lancer une recherche" data-en="Start a search">Lancer une recherche</span>
+      <span data-fr="LANCER UNE RECHERCHE" data-en="START A SEARCH">LANCER UNE RECHERCHE</span>
     </div>
 
     <div class="search-row">
       <div class="input-group">
-        <label data-fr="Pseudonyme cible" data-en="Target Username">Pseudonyme cible</label>
-        <div class="input-wrap">
-          <span class="input-icon">🔍</span>
-          <input type="text" id="username" placeholder="ex: johndoe" autocomplete="off" />
+        <label data-fr="PSEUDONYME CIBLE" data-en="TARGET USERNAME">PSEUDONYME CIBLE</label>
+        <div class="terminal-input-wrap">
+          <span class="terminal-prompt-sym">fasoosint$</span>
+          <input type="text" id="username" placeholder="johndoe" autocomplete="off" />
         </div>
       </div>
       <div class="input-group" style="max-width:160px">
-        <label data-fr="Région" data-en="Region">Région</label>
+        <label data-fr="RÉGION" data-en="REGION">RÉGION</label>
         <select id="region">
           <option value="" data-fr="Toutes" data-en="All">Toutes</option>
           <option value="global">🌐 Global</option>
@@ -452,7 +503,7 @@ footer a:hover { color: var(--yellow); }
         </select>
       </div>
       <div class="input-group" style="max-width:200px">
-        <label data-fr="Catégorie" data-en="Category">Catégorie</label>
+        <label data-fr="CATÉGORIE" data-en="CATEGORY">CATÉGORIE</label>
         <select id="category">
           <option value="">Toutes / All</option>
           <option value="social">📱 Social</option>
@@ -477,24 +528,20 @@ footer a:hover { color: var(--yellow); }
     <div class="options-row">
       <label class="checkbox-group">
         <input type="checkbox" id="export-html" />
-        <span data-fr="📄 Rapport HTML" data-en="📄 HTML Report">📄 Rapport HTML</span>
+        <span data-fr="📄 RAPPORT HTML" data-en="📄 HTML REPORT">📄 RAPPORT HTML</span>
       </label>
       <label class="checkbox-group">
         <input type="checkbox" id="export-csv" />
-        <span>📊 Export CSV</span>
+        <span>📊 EXPORT CSV</span>
       </label>
       <label class="checkbox-group">
         <input type="checkbox" id="do-avatar" />
-        <span data-fr="🖼️ Photos de profil" data-en="🖼️ Profile pictures">🖼️ Photos de profil</span>
-      </label>
-      <label class="checkbox-group">
-        <input type="checkbox" id="do-email" />
-        <span data-fr="📧 Emails associés" data-en="📧 Associated emails">📧 Emails associés</span>
+        <span data-fr="🖼️ PHOTOS PROFIL" data-en="🖼️ PROFILE PICS">🖼️ PHOTOS PROFIL</span>
       </label>
     </div>
 
     <button class="btn-search" id="btn-search" onclick="startSearch()">
-      <span>⚡</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
       <span data-fr="LANCER LA RECHERCHE" data-en="START SEARCH">LANCER LA RECHERCHE</span>
     </button>
 
@@ -513,19 +560,19 @@ footer a:hover { color: var(--yellow); }
     <div class="stats-grid">
       <div class="stat-card">
         <div class="stat-val" id="stat-found">0</div>
-        <div class="stat-label" data-fr="Profils trouvés" data-en="Profiles Found">Profils trouvés</div>
+        <div class="stat-label" data-fr="PROFILS TROUVÉS" data-en="PROFILES FOUND">PROFILS TROUVÉS</div>
       </div>
       <div class="stat-card g">
         <div class="stat-val" id="stat-total">0</div>
-        <div class="stat-label" data-fr="Sites analysés" data-en="Sites Checked">Sites analysés</div>
+        <div class="stat-label" data-fr="SITES ANALYSÉS" data-en="SITES CHECKED">SITES ANALYSÉS</div>
       </div>
       <div class="stat-card y">
         <div class="stat-val" id="stat-time">0s</div>
-        <div class="stat-label" data-fr="Durée" data-en="Duration">Durée</div>
+        <div class="stat-label" data-fr="DURÉE" data-en="DURATION">DURÉE</div>
       </div>
       <div class="stat-card">
         <div class="stat-val" id="stat-cats">0</div>
-        <div class="stat-label" data-fr="Catégories" data-en="Categories">Catégories</div>
+        <div class="stat-label" data-fr="CATÉGORIES" data-en="CATEGORIES">CATÉGORIES</div>
       </div>
     </div>
   </div>
@@ -551,23 +598,11 @@ footer a:hover { color: var(--yellow); }
     <div class="section-header">
       <div class="section-title">
         <span class="star">★</span>
-        <span data-fr="Photos de profil" data-en="Profile pictures">Photos de profil</span>
+        <span data-fr="PHOTOS DE PROFIL" data-en="PROFILE PICTURES">PHOTOS DE PROFIL</span>
         <span class="count-badge" id="avatar-badge">0</span>
       </div>
     </div>
     <div class="avatar-grid" id="avatar-grid"></div>
-  </div>
-
-  <!-- EMAILS -->
-  <div id="email-section">
-    <div class="section-header">
-      <div class="section-title">
-        <span class="star">★</span>
-        <span data-fr="Emails potentiels" data-en="Potential emails">Emails potentiels</span>
-        <span class="count-badge" id="email-badge">0</span>
-      </div>
-    </div>
-    <div class="email-list" id="email-list"></div>
   </div>
 
   <!-- RESULTS -->
@@ -575,21 +610,21 @@ footer a:hover { color: var(--yellow); }
     <div class="section-header">
       <div class="section-title">
         <span class="star">★</span>
-        <span data-fr="Résultats" data-en="Results">Résultats</span>
+        <span data-fr="RÉSULTATS" data-en="RESULTS">RÉSULTATS</span>
         <span class="count-badge" id="found-badge">0</span>
       </div>
     </div>
     <div class="cat-tabs" id="cat-tabs"></div>
     <div class="results-wrap">
       <div class="result-header">
-        <div data-fr="Site" data-en="Site">Site</div>
+        <div>SITE</div>
         <div>URL</div>
-        <div data-fr="Catégorie" data-en="Category">Catégorie</div>
+        <div data-fr="CATÉGORIE" data-en="CATEGORY">CATÉGORIE</div>
       </div>
       <div id="results-table"></div>
     </div>
     <div class="exports-section" id="exports-section" style="display:none">
-      <div class="exports-title" data-fr="Télécharger les rapports" data-en="Download reports">Télécharger les rapports</div>
+      <div class="exports-title" data-fr="TÉLÉCHARGER LES RAPPORTS" data-en="DOWNLOAD REPORTS">TÉLÉCHARGER LES RAPPORTS</div>
       <div class="exports-row" id="exports-row"></div>
     </div>
   </div>
@@ -604,7 +639,7 @@ footer a:hover { color: var(--yellow); }
   <a href="https://github.com/sawadogo749/Fasoosint" target="_blank">github.com/sawadogo749/Fasoosint</a>
   — For educational &amp; defensive use only
   <div class="bisnaaba">
-    Un produit de &nbsp;<strong>BISNAABA</strong>&nbsp; 🇧🇫
+    Un produit de &nbsp;<strong>BISNAABA</strong>
   </div>
 </footer>
 
@@ -615,7 +650,7 @@ let lastData    = null;
 
 const L = {
   fr: {
-    searching: "Recherche en cours...",
+    searching: "SCAN EN COURS...",
     found_on: "profils trouvés sur",
     sites: "sites",
     all: "Tous",
@@ -626,7 +661,7 @@ const L = {
     score_labels: ["Aucune exposition","Faible exposition","Exposition modérée","Exposition significative","Exposition élevée","EXPOSITION CRITIQUE"],
   },
   en: {
-    searching: "Searching...",
+    searching: "SCANNING...",
     found_on: "profiles found across",
     sites: "sites",
     all: "All",
@@ -676,6 +711,13 @@ function scoreLabel(score) {
   return labels[5];
 }
 
+function getFavicon(site, url) {
+  try {
+    const domain = new URL(url).hostname;
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
+  } catch(e) { return ''; }
+}
+
 async function startSearch() {
   const username = document.getElementById('username').value.trim();
   if (!username) { alert(L[currentLang].enter_username); return; }
@@ -688,7 +730,6 @@ async function startSearch() {
   document.getElementById('stats-section').style.display = 'none';
   document.getElementById('score-section').style.display = 'none';
   document.getElementById('avatar-section').style.display = 'none';
-  document.getElementById('email-section').style.display = 'none';
   document.getElementById('results-section').style.display = 'none';
   document.getElementById('progress-wrap').style.display = 'block';
   document.getElementById('progress-label').textContent = L[currentLang].searching;
@@ -700,7 +741,8 @@ async function startSearch() {
   }, 200);
 
   termLog(`[fasoosint]$ search --target ${username} --lang ${currentLang}`, 't-prompt');
-  termLog(`[>] Initialisation de la recherche...`, 't-info');
+  termLog(`[>] Initialisation moteur asynchrone...`, 't-info');
+  termLog(`[>] Chargement base de données 618+ sites...`, 't-info');
 
   try {
     const res = await fetch('/api/search', {
@@ -714,7 +756,7 @@ async function startSearch() {
         export_html: document.getElementById('export-html').checked,
         export_csv:  document.getElementById('export-csv').checked,
         avatar:      document.getElementById('do-avatar').checked,
-        email:       document.getElementById('do-email').checked,
+        email:       false,
       })
     });
 
@@ -727,7 +769,7 @@ async function startSearch() {
     lastData = data;
 
     data.found.slice(0, 12).forEach(r => {
-      termLog(`[✅] ${r.site} → ${r.url}`, 't-found');
+      termLog(`[✓] ${r.site} → ${r.url}`, 't-found');
     });
     if (data.found.length > 12) termLog(`[...] +${data.found.length - 12} autres`, 't-info');
     termLog(`[★] ${data.found_count} ${L[currentLang].found_on} ${data.total_checked} ${L[currentLang].sites} — ${data.elapsed}s`, 't-done');
@@ -752,7 +794,7 @@ async function startSearch() {
     document.getElementById('score-num').style.color = col;
     document.getElementById('score-fill').style.width = score + '%';
     document.getElementById('score-fill').style.background = col;
-    document.getElementById('score-box').style.borderColor = col + '55';
+    document.getElementById('score-box').style.borderColor = col + '44';
     document.getElementById('score-cats').innerHTML = Object.keys(data.categories).map(c =>
       `<span class="score-cat-badge">${c} (${data.categories[c].length})</span>`
     ).join('');
@@ -768,15 +810,6 @@ async function startSearch() {
         </div>
       `).join('');
       document.getElementById('avatar-section').style.display = 'block';
-    }
-
-    // EMAILS
-    if (data.emails && data.emails.length > 0) {
-      document.getElementById('email-badge').textContent = data.emails.length;
-      document.getElementById('email-list').innerHTML = data.emails.map(email => `
-        <div class="email-item">📧 ${email}</div>
-      `).join('');
-      document.getElementById('email-section').style.display = 'block';
     }
 
     buildResults(data);
@@ -837,13 +870,19 @@ function renderTable(found, categories) {
     wrap.innerHTML = `<div class="result-row" style="color:var(--muted);grid-template-columns:1fr">${L[currentLang].no_results}</div>`;
     return;
   }
-  wrap.innerHTML = items.map(r => `
-    <div class="result-row">
-      <div class="result-site">✅ ${r.site}</div>
-      <div class="result-url"><a href="${r.url}" target="_blank">${r.url}</a></div>
-      <div class="result-cat">${r.category || ''}</div>
-    </div>
-  `).join('');
+  wrap.innerHTML = items.map(r => {
+    const favicon = getFavicon(r.site, r.url);
+    return `
+      <div class="result-row">
+        <div class="result-site">
+          ${favicon ? `<img src="${favicon}" onerror="this.style.display='none'">` : ''}
+          <a href="${r.url}" target="_blank">${r.site}</a>
+        </div>
+        <div class="result-url"><a href="${r.url}" target="_blank">${r.url}</a></div>
+        <div class="result-cat">${r.category || ''}</div>
+      </div>
+    `;
+  }).join('');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
