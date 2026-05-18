@@ -4,6 +4,7 @@
 import asyncio
 import sys
 import json
+import re
 import time
 import datetime
 from pathlib import Path
@@ -18,28 +19,99 @@ app = Flask(__name__)
 OUTPUT_DIR = Path(__file__).parent.parent / "output"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
+# ── SÉCURITÉ ──────────────────────────────────────────────
+# Username valide : lettres, chiffres, tirets, underscores, points
+USERNAME_REGEX = re.compile(r'^[a-zA-Z0-9._\-]{1,50}$')
+
+# Mots-clés dangereux à bloquer
+BLACKLIST = [
+    "select", "insert", "update", "delete", "drop", "union",
+    "exec", "execute", "script", "alert", "onerror", "onclick",
+    "javascript", "eval", "<", ">", ";", "--", "/*", "*/",
+    "xp_", "cmd", "shell", "passwd", "etc/passwd", "proc/self"
+]
+
+def is_safe_username(username):
+    """Vérifie que le username est sûr."""
+    if not username:
+        return False
+    if not USERNAME_REGEX.match(username):
+        return False
+    username_lower = username.lower()
+    for word in BLACKLIST:
+        if word in username_lower:
+            return False
+    return True
+
+def sanitize_input(text):
+    """Nettoie les entrées utilisateur."""
+    if not text:
+        return ""
+    # Supprime les caractères dangereux
+    text = re.sub(r'[<>;"\'\\]', '', str(text))
+    return text.strip()[:100]
+
+# Rate limiting simple en mémoire
+request_counts = {}
+RATE_LIMIT = 10  # requêtes par minute par IP
+
+def check_rate_limit(ip):
+    now = time.time()
+    if ip not in request_counts:
+        request_counts[ip] = []
+    # Nettoie les anciennes requêtes
+    request_counts[ip] = [t for t in request_counts[ip] if now - t < 60]
+    if len(request_counts[ip]) >= RATE_LIMIT:
+        return False
+    request_counts[ip].append(now)
+    return True
+
 @app.route("/")
 def index():
     return render_template("index.html", version=VERSION)
 
 @app.route("/api/search", methods=["POST"])
 def api_search():
-    data = request.get_json()
-    username = data.get("username", "").strip()
+    # Rate limiting
+    ip = request.headers.get('X-Forwarded-For', request.remote_addr)
+    if ip:
+        ip = ip.split(',')[0].strip()
+    if not check_rate_limit(ip):
+        return jsonify({"error": "Trop de requêtes. Attendez 1 minute."}), 429
+
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "Requête invalide"}), 400
+
+    username = str(data.get("username", "")).strip()
     lang = data.get("lang", "fr")
     region = data.get("region") or None
     category = data.get("category") or None
-    timeout = int(data.get("timeout", 10))
-    concurrency = int(data.get("concurrency", 50))
-    export_html = data.get("export_html", False)
-    export_csv = data.get("export_csv", False)
-    do_avatar = data.get("avatar", False)
-    do_email = data.get("email", False)
+    export_html = bool(data.get("export_html", False))
+    export_csv = bool(data.get("export_csv", False))
+    do_avatar = bool(data.get("avatar", False))
+    do_email = bool(data.get("email", False))
 
-    if not username:
-        return jsonify({"error": "Username requis"}), 400
-    if len(username) > 50:
-        return jsonify({"error": "Username trop long"}), 400
+    # Validation username
+    if not is_safe_username(username):
+        return jsonify({"error": "Username invalide ou dangereux"}), 400
+
+    # Validation lang
+    if lang not in ["fr", "en"]:
+        lang = "fr"
+
+    # Validation region et category
+    allowed_regions = ["", "global", "africa"]
+    allowed_categories = ["", "social", "coding", "gaming", "video", "music",
+                          "art", "blog", "forum", "professional", "security",
+                          "crypto", "shopping", "sport", "education", "africa", "misc"]
+    if region not in allowed_regions:
+        region = None
+    if category not in allowed_categories:
+        category = None
+
+    timeout = 10
+    concurrency = 50
 
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
@@ -115,6 +187,10 @@ def api_search():
 
 @app.route("/output/<path:filename>")
 def serve_output(filename):
+    # Bloque les traversées de répertoire
+    safe_path = Path(filename)
+    if ".." in str(safe_path) or str(safe_path).startswith("/"):
+        return jsonify({"error": "Accès refusé"}), 403
     return send_from_directory(OUTPUT_DIR, filename)
 
 @app.route("/api/sites/stats")
@@ -131,6 +207,18 @@ def sites_stats():
         regions[r] = regions.get(r, 0) + 1
     return jsonify({"total": len(sites), "categories": cats, "regions": regions})
 
+@app.errorhandler(404)
+def not_found(e):
+    return jsonify({"error": "Page non trouvée"}), 404
+
+@app.errorhandler(429)
+def too_many(e):
+    return jsonify({"error": "Trop de requêtes"}), 429
+
+@app.errorhandler(500)
+def server_error(e):
+    return jsonify({"error": "Erreur serveur"}), 500
+
 if __name__ == "__main__":
     print(f"\n  FasoOSINT Web v{VERSION} — http://localhost:5000\n")
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=False, host="0.0.0.0", port=5000)

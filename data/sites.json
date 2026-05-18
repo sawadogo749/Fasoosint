@@ -1488,14 +1488,6 @@
     "region": "global"
   },
   {
-    "name": "ObservableHQ",
-    "url": "https://observablehq.com/@{username}",
-    "error_type": "message",
-    "error_msg": "Page not found",
-    "category": "misc",
-    "region": "global"
-  },
-  {
     "name": "Open Collective",
     "url": "https://opencollective.com/{username}",
     "error_type": "status_code",
@@ -2861,6 +2853,2030 @@
     "error_type": "status_code",
     "error_msg": "",
     "category": "social",
+    "region": "global"
+  },
+  {
+    "name": "35photo",
+    "url": "https://35photo.pro/@{username}/",
+    "error_type": "message",
+    "error_msg": "Catalogs of professional author",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "3dtoday",
+    "url": "https://3dtoday.ru/blogs/{username}",
+    "error_type": "message",
+    "error_msg": "404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "7dach",
+    "url": "https://7dach.ru/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Ошибка / 7dach.ru",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ACF",
+    "url": "https://support.advancedcustomfields.com/forums/users/{username}/",
+    "error_type": "message",
+    "error_msg": "Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "alik",
+    "url": "https://www.alik.cz/u/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Vizitka nenalezena",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Alura",
+    "url": "https://cursos.alura.com.br/user/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"Not Found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ameblo",
+    "url": "https://ameblo.jp/{username}",
+    "error_type": "message",
+    "error_msg": "削除された可能性がございます。",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Arch Linux GitLab",
+    "url": "https://gitlab.archlinux.org/api/v4/users?username={username}",
+    "error_type": "message",
+    "error_msg": "[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ArchWiki",
+    "url": "https://wiki.archlinux.org/api.php?action=query&format=json&list=users&ususers={username}&usprop=cancreate&formatversion=2&errorformat=html&errorsuselocal=true&uselang=en",
+    "error_type": "message",
+    "error_msg": "\"missing\":true",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Arduino (Project Hub)",
+    "url": "https://projecthub.arduino.cc/{username}",
+    "error_type": "message",
+    "error_msg": "\"userInfo\":null",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Artists & Clients",
+    "url": "https://artistsnclients.com/people/{username}",
+    "error_type": "message",
+    "error_msg": "The page you requested wasn't there when we tried to get it for you. What a bother!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "au.ru",
+    "url": "https://au.ru/user/{username}/",
+    "error_type": "message",
+    "error_msg": "Пользователь не найден",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "bdsmsingles",
+    "url": "https://www.bdsmsingles.com/members/{username}/",
+    "error_type": "message",
+    "error_msg": "BDSM Singles",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bimpos",
+    "url": "https://ask.bimpos.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "blogi.pl",
+    "url": "https://www.blogi.pl/osoba,{username}.html",
+    "error_type": "message",
+    "error_msg": "Niepoprawny adres.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Blogspot",
+    "url": "http://{username}.blogspot.com",
+    "error_type": "message",
+    "error_msg": "Blog not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bluesky 2",
+    "url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={username}.bsky.social",
+    "error_type": "message",
+    "error_msg": "\"message\":\"Profile not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Boosty",
+    "url": "https://api.boosty.to/v1/blog/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"blog_not_found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Brickset",
+    "url": "https://brickset.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "{name}</h1>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Bunpro",
+    "url": "https://community.bunpro.jp/u/{username}.json",
+    "error_type": "message",
+    "error_msg": "The requested URL or resource could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Calendy",
+    "url": "https://calendly.com/{username}",
+    "error_type": "message",
+    "error_msg": "Sorry, but the page you were looking for could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "CastingCallClub",
+    "url": "https://www.castingcall.club/{username}",
+    "error_type": "message",
+    "error_msg": "404: This is not the page you were looking for. In the future, our AI robot overlords will be able to better predict exactly what you were looking for.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cent",
+    "url": "https://beta.cent.co/data/user/profile?userHandles={username}",
+    "error_type": "message",
+    "error_msg": "\"results\":[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chamsko",
+    "url": "https://www.chamsko.pl/profil/{username}",
+    "error_type": "message",
+    "error_msg": "Strona nie istnieje.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chess.com",
+    "url": "https://api.chess.com/pub/player/{username}",
+    "error_type": "message",
+    "error_msg": "\"code\":0",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Chomikuj.pl",
+    "url": "https://chomikuj.pl/{username}/",
+    "error_type": "message",
+    "error_msg": "Chomik o takiej nazwie nie istnieje",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coda",
+    "url": "https://coda.io/@{username}/",
+    "error_type": "message",
+    "error_msg": "<title>Coda | Page not found - Coda</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "codementor",
+    "url": "https://www.codementor.io/@{username}",
+    "error_type": "message",
+    "error_msg": "404/favicon.png",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Coub",
+    "url": "https://coub.com/api/v2/channels/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"Unhandled exception\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cropty",
+    "url": "https://api.cropty.io/v1/auth/{username}",
+    "error_type": "message",
+    "error_msg": "\"errors\":",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Cytoid",
+    "url": "https://cytoid.io/profile/{username}",
+    "error_type": "message",
+    "error_msg": "Profile not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Daily Kos",
+    "url": "https://www.dailykos.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found! (404)",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "dateinasia",
+    "url": "https://www.dateinasia.com/{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Dating.ru",
+    "url": "https://dating.ru/{username}/",
+    "error_type": "message",
+    "error_msg": "Такой страницы не существует.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "DDoSecrets",
+    "url": "https://search.ddosecrets.com/search?q={username}",
+    "error_type": "message",
+    "error_msg": "<p>No results</p>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "dev.to",
+    "url": "https://dev.to/api/users/by_username?url={username}",
+    "error_type": "message",
+    "error_msg": "\"status\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "devRant",
+    "url": "https://devrant.com/api/get-user-id?app=3&username={username}",
+    "error_type": "message",
+    "error_msg": "\"success\":false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Diablo",
+    "url": "https://diablo2.io/member/{username}/",
+    "error_type": "message",
+    "error_msg": "The requested user does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "DIBIZ",
+    "url": "https://www.dibiz.com/{username}",
+    "error_type": "message",
+    "error_msg": "An Error Has Occurred",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "diigo",
+    "url": "https://www.diigo.com/interact_api/load_profile_info?name={username}",
+    "error_type": "message",
+    "error_msg": "{}",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Discord (Invite)",
+    "url": "https://discord.com/api/v9/invites/{username}?with_counts=true&with_expiration=true",
+    "error_type": "message",
+    "error_msg": "\"message\": \"Unknown Invite\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Discourse",
+    "url": "https://meta.discourse.org/u/{username}/summary.json",
+    "error_type": "message",
+    "error_msg": "The requested URL or resource could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Docker Hub (Organization)",
+    "url": "https://hub.docker.com/v2/orgs/{username}/",
+    "error_type": "message",
+    "error_msg": "\"orgname\":[\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Docker Hub (User)",
+    "url": "https://hub.docker.com/v2/users/{username}/",
+    "error_type": "message",
+    "error_msg": "\"message\":\"User not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "donate.stream",
+    "url": "https://donate.stream/api/v1/streamer.get?path={username}&app=9f4e793cec820015d511dbc77b20c5c1",
+    "error_type": "message",
+    "error_msg": "\"message\":\"Not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Donatello",
+    "url": "https://donatello.to/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Сторінку не знайдено (404) - Donatello</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Donation Alerts",
+    "url": "https://www.donationalerts.com/api/v1/user/{username}/donationpagesettings",
+    "error_type": "message",
+    "error_msg": "\"success\":false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Donatty",
+    "url": "https://api.donatty.com/users/find/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"internal error\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Dota2.ru",
+    "url": "https://dota2.ru/forum/search/?type=user&keywords={username}&sort_by=username",
+    "error_type": "message",
+    "error_msg": "id=\"no-activity-posts\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "DOTAFire",
+    "url": "https://www.dotafire.com/ajax/searchSite?text={username}&search=members",
+    "error_type": "message",
+    "error_msg": ">No results found</span>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "DOU",
+    "url": "https://dou.ua/users/{username}/",
+    "error_type": "message",
+    "error_msg": "class=\"page-error\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "easyen",
+    "url": "https://easyen.ru/index/8-0-{username}",
+    "error_type": "message",
+    "error_msg": "Пользователь не найден",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "eBay",
+    "url": "https://www.ebay.com/usr/{username}",
+    "error_type": "message",
+    "error_msg": "The User ID you entered was not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ebay_stores",
+    "url": "https://www.ebay.com/str/{username}",
+    "error_type": "message",
+    "error_msg": "Sorry, this store was not found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Etoro",
+    "url": "https://www.etoro.com/api/logininfo/v1.1/users/{username}",
+    "error_type": "message",
+    "error_msg": "\"ErrorCode\":\"NotFound\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Expressional.social (Mastodon Instance)",
+    "url": "https://expressional.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fabswingers",
+    "url": "https://www.fabswingers.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "The user you tried to view doesn't seem to be on the site any more",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Facebook",
+    "url": "https://www.facebook.com/{username}/",
+    "error_type": "message",
+    "error_msg": "<title>Facebook</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "FACEIT",
+    "url": "https://www.faceit.com/api/users/v1/nicknames/{username}",
+    "error_type": "message",
+    "error_msg": "\"message\":\"user not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fanslist (OnlyFans)",
+    "url": "https://fanslist.com/search?q={username}",
+    "error_type": "message",
+    "error_msg": "No results found for query",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fansly",
+    "url": "https://apiv3.fansly.com/api/v1/account?usernames={username}",
+    "error_type": "message",
+    "error_msg": "\"response\":[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Federated.press (Mastodon Instance)",
+    "url": "https://federated.press/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Filmweb",
+    "url": "https://www.filmweb.pl/user/{username}",
+    "error_type": "message",
+    "error_msg": "Varnish 404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "fine_art_america",
+    "url": "https://fineartamerica.com/profiles/{username}",
+    "error_type": "message",
+    "error_msg": "Browse through millions of independent artists in our extensive",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Fosstodon.org (Mastodon Instance)",
+    "url": "https://fosstodon.org/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "fotka",
+    "url": "https://api.fotka.com/v2/user/dataStatic?login={username}",
+    "error_type": "message",
+    "error_msg": "ERROR",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Foursquare",
+    "url": "https://foursquare.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Freelance.ua",
+    "url": "https://freelance.ua/user/{username}/",
+    "error_type": "message",
+    "error_msg": "Схоже, дана сторінка не знайдена",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "FriendFinder",
+    "url": "https://friendfinder.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "302 Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gab",
+    "url": "https://gab.com/api/v1/account_by_username/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"Record not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Game Jolt",
+    "url": "https://gamejolt.com/site-api/web/profile/@{username}/",
+    "error_type": "message",
+    "error_msg": "null,",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Garmin connect",
+    "url": "https://connect.garmin.com/modern/profile/{username}",
+    "error_type": "message",
+    "error_msg": "resourceNotFoundRoute",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GDBrowser",
+    "url": "https://gdbrowser.com/api/profile/{username}",
+    "error_type": "message",
+    "error_msg": "-1",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gettr",
+    "url": "https://gettr.com/api/s/uinf/{username}",
+    "error_type": "message",
+    "error_msg": "\"rc\":\"ERR\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Gigapan",
+    "url": "https://www.gigapan.com/profiles/{username}",
+    "error_type": "message",
+    "error_msg": "<a href=\"/gigapans\">View Gigapans</a>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Giphy (Channel)",
+    "url": "https://giphy.com/channel/{username}",
+    "error_type": "message",
+    "error_msg": "404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GitLab",
+    "url": "https://gitlab.com/api/v4/users?username={username}",
+    "error_type": "message",
+    "error_msg": "[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "gloria.tv",
+    "url": "https://gloria.tv/{username}",
+    "error_type": "message",
+    "error_msg": "Page unavailable",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GNOME (GitLab)",
+    "url": "https://gitlab.gnome.org/api/v4/users?username={username}",
+    "error_type": "message",
+    "error_msg": "[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GNOME (Shell Extensions)",
+    "url": "https://extensions.gnome.org/accounts/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<h3>404 - Page not Found</h3>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Goodgame_Russia",
+    "url": "https://goodgame.ru/channel/{username}/",
+    "error_type": "message",
+    "error_msg": "Такой страницы не существует",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "gpodder.net",
+    "url": "https://gpodder.net/user/{username}/",
+    "error_type": "message",
+    "error_msg": "404 - Not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Graphics.social (Mastodon Instance)",
+    "url": "https://graphics.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Greasy Fork",
+    "url": "https://greasyfork.org/en/users?q={username}",
+    "error_type": "message",
+    "error_msg": "<p>No users!</p>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "GTAinside.com",
+    "url": "https://www.gtainside.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "<h1>404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Habbo.es",
+    "url": "https://www.habbo.es/api/public/users?name={username}",
+    "error_type": "message",
+    "error_msg": "not-found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Habr (Q&A)",
+    "url": "https://qna.habr.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "icon_error_404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Habtium",
+    "url": "https://habtium.es/{username}",
+    "error_type": "message",
+    "error_msg": "<h1 class=\"section red\">Oops!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hackadvisor",
+    "url": "https://hackadvisor.io/api/v2/profile/{username}/",
+    "error_type": "message",
+    "error_msg": "{\"detail\":\"Username not found\"}",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "hamaha",
+    "url": "https://hamaha.net/{username}",
+    "error_type": "message",
+    "error_msg": "content=\"HAMAHA  Биткоин форум. Торговля на бирже - ➨ Обучение Криптовалютам, Биткоин и NYSE \"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hcommons.social (Mastodon Instance)",
+    "url": "https://hcommons.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HiHello",
+    "url": "https://www.hihello.me/author/{username}",
+    "error_type": "message",
+    "error_msg": "Well, this is awkward",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Hometech.social (Mastodon Instance)",
+    "url": "https://hometech.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "HulkShare",
+    "url": "https://www.hulkshare.com/{username}",
+    "error_type": "message",
+    "error_msg": "Invalid user.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "icq-chat",
+    "url": "https://icq.icqchat.co/members/{username}/",
+    "error_type": "message",
+    "error_msg": "Oops! We ran into some problems",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ilovegrowingmarijuana",
+    "url": "https://support.ilovegrowingmarijuana.com/u/{username}",
+    "error_type": "message",
+    "error_msg": "Oops! That page doesn’t exist or is private",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "inaturalist",
+    "url": "https://api.inaturalist.org/v1/users/{username}",
+    "error_type": "message",
+    "error_msg": "\"status\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Instagram",
+    "url": "https://www.instagram.com/{username}/",
+    "error_type": "message",
+    "error_msg": "\"routePath\":null",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Internet Archive User Contribution Search",
+    "url": "https://archive.org/advancedsearch.php?q=creator:{username}&output=json",
+    "error_type": "message",
+    "error_msg": "numFound\":0",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Internet Archive Username Mentions",
+    "url": "https://archive.org/advancedsearch.php?q={username}&output=json",
+    "error_type": "message",
+    "error_msg": "numFound\":0",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "interpals",
+    "url": "https://www.interpals.net/{username}",
+    "error_type": "message",
+    "error_msg": "User not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Intigriti",
+    "url": "https://app.intigriti.com/api/user/public/profile/{username}",
+    "error_type": "message",
+    "error_msg": "class=\"error-page-container\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "itch.io",
+    "url": "https://itch.io/profile/{username}",
+    "error_type": "message",
+    "error_msg": "class=\"not_found_page page_widget base_widget\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "kik",
+    "url": "https://kik.me/{username}",
+    "error_type": "message",
+    "error_msg": "<h1 class=\"display-name\"> </h1>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "komi",
+    "url": "https://api.komi.io/api/talent/usernames/{username}",
+    "error_type": "message",
+    "error_msg": "The talent profile was not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "kwejk.pl",
+    "url": "https://kwejk.pl/uzytkownik/{username}#/tablica/",
+    "error_type": "message",
+    "error_msg": "404 - strona nie została znaleziona - KWEJK.pl",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LeakIX",
+    "url": "https://leakix.net/u/{username}",
+    "error_type": "message",
+    "error_msg": "<title>LeakIX - Server error</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Letterboxd",
+    "url": "https://letterboxd.com/{username}/",
+    "error_type": "message",
+    "error_msg": "Sorry, we can’t find the page you’ve requested.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LevelBlue",
+    "url": "https://otx.alienvault.com/otxapi/auth/validate?username={username}",
+    "error_type": "message",
+    "error_msg": "{}",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Liberapay",
+    "url": "https://liberapay.com/{username}",
+    "error_type": "message",
+    "error_msg": "Response code: 404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Libretooth.gr (Mastodon Instance)",
+    "url": "https://libretooth.gr/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "lichess.org",
+    "url": "https://lichess.org/api/player/autocomplete?term={username}&exists=1",
+    "error_type": "message",
+    "error_msg": "false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "LINE",
+    "url": "https://line.me/R/ti/p/@{username}?from=page",
+    "error_type": "message",
+    "error_msg": "404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MAGABOOK",
+    "url": "https://magabook.com/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Malpedia Actors",
+    "url": "https://malpedia.caad.fkie.fraunhofer.de/actor/{username}",
+    "error_type": "message",
+    "error_msg": "Page not Found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mapstodon.space (Mastodon Instance)",
+    "url": "https://mapstodon.space/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Martech",
+    "url": "https://martech.org/author/{username}/",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Massage Anywhere",
+    "url": "https://www.massageanywhere.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<title>MassageAnywhere.com: Search Results</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "masto.ai",
+    "url": "https://masto.ai/@{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Masto.nyc (Mastodon Instance)",
+    "url": "https://masto.nyc/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon API",
+    "url": "https://mastodon.social/api/v2/search?q={username}&limit=1&type=accounts",
+    "error_type": "message",
+    "error_msg": "\"accounts\":[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-101010.pl",
+    "url": "https://101010.pl/@{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-C.IM",
+    "url": "https://c.im/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>The page you are looking for isn&#39;t here",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-climatejustice.rocks",
+    "url": "https://climatejustice.rocks/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-Defcon",
+    "url": "https://defcon.social/@{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-meow.social",
+    "url": "https://meow.social/@{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon-Toot.Community",
+    "url": "https://toot.community/@{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mastodon.online",
+    "url": "https://mastodon.online/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Minds",
+    "url": "https://www.minds.com/api/v3/register/validate?username={username}",
+    "error_type": "message",
+    "error_msg": "\"valid\":true",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "mintme",
+    "url": "https://www.mintme.com/token/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mixi",
+    "url": "https://mixi.jp/view_community.pl?id={username}",
+    "error_type": "message",
+    "error_msg": "データがありません",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Mixlr",
+    "url": "https://api.mixlr.com/users/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"Resource not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MobileGTA.net",
+    "url": "https://www.mobilegta.net/en/user/{username}",
+    "error_type": "message",
+    "error_msg": "<h1>404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Monkeytype",
+    "url": "https://api.monkeytype.com/users/{username}/profile",
+    "error_type": "message",
+    "error_msg": "\"message\":\"User not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Motokiller",
+    "url": "https://mklr.pl/user/{username}",
+    "error_type": "message",
+    "error_msg": "Nie znaleziono użytkownika o podanym loginie.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Musician.social (Mastodon Instance)",
+    "url": "https://musician.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "musictraveler",
+    "url": "https://www.musictraveler.com/en/users/{username}/",
+    "error_type": "message",
+    "error_msg": "<title>Page Not found</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MUYZORRAS",
+    "url": "https://www.muyzorras.com/usuarios/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Error 404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MyFitnessPal Community",
+    "url": "https://community.myfitnesspal.com/en/profile/{username}",
+    "error_type": "message",
+    "error_msg": "User Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MyLot",
+    "url": "https://www.mylot.com/{username}",
+    "error_type": "message",
+    "error_msg": " / Whoops!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MYM",
+    "url": "https://mym.fans/{username}",
+    "error_type": "message",
+    "error_msg": "class=\"page page-404\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "MyNickname",
+    "url": "https://mynickname.com/en/search?q={username}",
+    "error_type": "message",
+    "error_msg": "<h2>Nickname not found. Try searching for similar nicknames.</h2>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "naija_planet",
+    "url": "https://naijaplanet.com/{username}",
+    "error_type": "message",
+    "error_msg": "- NaijaPlanet!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "NaturalNews",
+    "url": "https://naturalnews.com/author/{username}/",
+    "error_type": "message",
+    "error_msg": "The page you are looking for cannot be found or is no longer available.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Neocities",
+    "url": "https://neocities.org/site/{username}",
+    "error_type": "message",
+    "error_msg": "- Not Found</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "newmeet",
+    "url": "https://www.newmeet.com/en/profile/{username}/",
+    "error_type": "message",
+    "error_msg": "Chat with , , ,  - ",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Nightbot",
+    "url": "https://api.nightbot.tv/1/channels/t/{username}",
+    "error_type": "message",
+    "error_msg": "\"status\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "nihbuatjajan",
+    "url": "https://www.nihbuatjajan.com/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Nih Buat Jajan</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Nitecrew (Mastodon Instance)",
+    "url": "https://nitecrew.rip/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "oglaszamy24h.pl",
+    "url": "https://oglaszamy24h.pl/profil,{username}",
+    "error_type": "message",
+    "error_msg": "Nieprawidłowy link, w bazie danych nie istnieje użytkownik o podanym loginie",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ok.ru",
+    "url": "https://ok.ru/{username}",
+    "error_type": "message",
+    "error_msg": "class=\"p404_t",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "omg.lol",
+    "url": "https://api.omg.lol/address/{username}/info",
+    "error_type": "message",
+    "error_msg": "\"success\": false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "OpenStreetMap Wiki",
+    "url": "https://wiki.openstreetmap.org/w/api.php?action=query&format=json&list=users&ususers={username}",
+    "error_type": "message",
+    "error_msg": "\"missing\":\"\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Oper.ru",
+    "url": "https://oper.ru/visitors/info.php?t={username}",
+    "error_type": "message",
+    "error_msg": "Нет такого пользователя",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Orbys",
+    "url": "https://orbys.net/{username}",
+    "error_type": "message",
+    "error_msg": "The page you are looking for cannot be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Origins.Habbo.com",
+    "url": "https://origins.habbo.com/api/public/users?name={username}",
+    "error_type": "message",
+    "error_msg": "not-found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Origins.Habbo.com.br",
+    "url": "https://origins.habbo.com.br/api/public/users?name={username}",
+    "error_type": "message",
+    "error_msg": "not-found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Origins.Habbo.es",
+    "url": "https://origins.habbo.es/api/public/users?name={username}",
+    "error_type": "message",
+    "error_msg": "not-found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "palnet",
+    "url": "https://www.palnet.io/@{username}/",
+    "error_type": "message",
+    "error_msg": "Unknown user account!",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "patch",
+    "url": "https://patch.com/users/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Page not found</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "PatientsLikeMe",
+    "url": "https://www.patientslikeme.com/members/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pewex",
+    "url": "https://retro.pewex.pl/user/{username}",
+    "error_type": "message",
+    "error_msg": "Nie znaleziono użytkownika o podanym loginie.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Picsart",
+    "url": "https://api.picsart.com/users/show/{username}.json",
+    "error_type": "message",
+    "error_msg": "\"status\":\"error\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Piekielni",
+    "url": "https://piekielni.pl/user/{username}",
+    "error_type": "message",
+    "error_msg": "Nie znaleziono użytkownika o podanym loginie.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pillowfort",
+    "url": "https://www.pillowfort.social/{username}/json/?p=1",
+    "error_type": "message",
+    "error_msg": "<title>(404)</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Poe.com",
+    "url": "https://poe.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "\"user\":null",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pokec",
+    "url": "https://pokec.azet.sk/{username}",
+    "error_type": "message",
+    "error_msg": "Neexistujúci používateľ",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "popl",
+    "url": "https://poplme.co/{username}",
+    "error_type": "message",
+    "error_msg": "Profile not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pornhub (Model)",
+    "url": "https://www.pornhub.com/model/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pornhub (Pornstar)",
+    "url": "https://www.pornhub.com/pornstar/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "postcrossing",
+    "url": "https://www.postcrossing.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "- Postcrossing",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Poweredbygay.social (Mastodon Instance)",
+    "url": "https://poweredbygay.social/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pr0gramm",
+    "url": "https://pr0gramm.com/api/profile/info?name={username}",
+    "error_type": "message",
+    "error_msg": "\"code\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pravda.me",
+    "url": "https://pravda.me/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Privacy Guides",
+    "url": "https://discuss.privacyguides.net/u/{username}.json",
+    "error_type": "message",
+    "error_msg": "The requested URL or resource could not be found.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Pronouny",
+    "url": "https://pronouny.xyz/api/users/profile/username/{username}",
+    "error_type": "message",
+    "error_msg": "That user doesn't exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "prv.pl",
+    "url": "https://www.prv.pl/osoba/{username}",
+    "error_type": "message",
+    "error_msg": "Użytkownik nie istnieje.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Public.com",
+    "url": "https://public.com/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>404 - Page Not Found</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "quitter.pl",
+    "url": "https://quitter.pl/api/v1/accounts/{username}",
+    "error_type": "message",
+    "error_msg": "\"error\":",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "RedGIFs",
+    "url": "https://api.redgifs.com/v1/users/{username}",
+    "error_type": "message",
+    "error_msg": "\"status\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "resumes_actorsaccess",
+    "url": "https://resumes.actorsaccess.com/{username}",
+    "error_type": "message",
+    "error_msg": "File was not found on this SERVER",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Revolut",
+    "url": "https://revolut.me/api/web-profile/{username}",
+    "error_type": "message",
+    "error_msg": "\"User not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ru_123rf",
+    "url": "https://ru.123rf.com/profile_{username}",
+    "error_type": "message",
+    "error_msg": "<title>Фотобанк 123RF - Стоковые Фото, Векторы, Видеоролики. Подписка на Фото. Royalty Free контент<",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "RubyGems.org",
+    "url": "https://rubygems.org/api/v1/profiles/{username}.json",
+    "error_type": "message",
+    "error_msg": "\"error\":\"Not Found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "RuneScape",
+    "url": "https://apps.runescape.com/runemetrics/profile/profile?user={username}",
+    "error_type": "message",
+    "error_msg": "\"error\":\"NO_PROFILE\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ruVoIP.net",
+    "url": "https://ruvoip.net/members/{username}/",
+    "error_type": "message",
+    "error_msg": "Error 404 - Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Salon24",
+    "url": "https://www.salon24.pl/u/{username}/",
+    "error_type": "message",
+    "error_msg": "<title>Salon24 - Blogi, wiadomości, opinie i komentarze",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Scored",
+    "url": "https://scored.co/api/v2/user/about.json?user={username}",
+    "error_type": "message",
+    "error_msg": "\"status\":false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "ScoutWiki",
+    "url": "https://en.scoutwiki.org/User:{username}",
+    "error_type": "message",
+    "error_msg": "is not registered",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Searchengines",
+    "url": "https://searchengines.guru/ru/search?keyword=&author={username}&sortByDate=true",
+    "error_type": "message",
+    "error_msg": "class=\"nothing-found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SEOClerks",
+    "url": "https://www.seoclerks.com/user/{username}",
+    "error_type": "message",
+    "error_msg": "<title>SEO Marketplace",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Shesfreaky",
+    "url": "https://www.shesfreaky.com/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SimplePlanes",
+    "url": "https://www.simpleplanes.com/u/{username}",
+    "error_type": "message",
+    "error_msg": "<title>SimplePlanes Airplanes</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SlackHoles",
+    "url": "https://slackholes.com/actor/{username}/",
+    "error_type": "message",
+    "error_msg": "It looks like nothing was found at this location",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SmashRun",
+    "url": "https://smashrun.com/{username}/",
+    "error_type": "message",
+    "error_msg": "no Smashrunner with the username",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "smelsy",
+    "url": "https://www.smelsy.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "Server Error",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "soc.citizen4.eu",
+    "url": "https://soc.citizen4.eu/profile/{username}/profile",
+    "error_type": "message",
+    "error_msg": "Nie znaleziono",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "social.bund.de",
+    "url": "https://social.bund.de/@{username}",
+    "error_type": "message",
+    "error_msg": "<title>The page you are looking for isn&#39;t here.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SpiceWorks",
+    "url": "https://community.spiceworks.com/people/{username}",
+    "error_type": "message",
+    "error_msg": "Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Sports Tracker",
+    "url": "https://api.sports-tracker.com/apiserver/v1/user/name/{username}",
+    "error_type": "message",
+    "error_msg": "\"code\":\"404\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "StackOverflow",
+    "url": "https://api.stackexchange.com/2.3/users?order=desc&sort=name&inname={username}&site=stackoverflow",
+    "error_type": "message",
+    "error_msg": "\"items\":[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "SteamGifts",
+    "url": "https://www.steamgifts.com/user/{username}",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "StreamElements",
+    "url": "https://api.streamelements.com/kappa/v2/channels/{username}",
+    "error_type": "message",
+    "error_msg": "error",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "StreamLabs",
+    "url": "https://streamlabs.com/api/v6/user/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Unauthorized</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Stripchat",
+    "url": "https://stripchat.com/api/front/users/checkUsername?username={username}",
+    "error_type": "message",
+    "error_msg": "[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Substack",
+    "url": "https://substack.com/@{username}",
+    "error_type": "message",
+    "error_msg": "&quot; on Substack</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "sukebei.nyaa.si",
+    "url": "https://sukebei.nyaa.si/user/{username}",
+    "error_type": "message",
+    "error_msg": "404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TamTam",
+    "url": "https://tamtam.chat/{username}",
+    "error_type": "message",
+    "error_msg": "ТамТам</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tanuki.pl",
+    "url": "https://tanuki.pl/profil/{username}",
+    "error_type": "message",
+    "error_msg": "Nie ma takiego użytkownika",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tappy",
+    "url": "https://api.tappy.tech/api/profile/username/{username}",
+    "error_type": "message",
+    "error_msg": "Profile of username Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "taskrabbit",
+    "url": "https://www.taskrabbit.com/profile/{username}/about",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Telegram",
+    "url": "https://t.me/{username}",
+    "error_type": "message",
+    "error_msg": "noindex, nofollow",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Teletype",
+    "url": "https://teletype.in/@{username}",
+    "error_type": "message",
+    "error_msg": "class=\"error\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TETR.IO",
+    "url": "https://ch.tetr.io/api/users/{username}",
+    "error_type": "message",
+    "error_msg": "\"success\":false",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "theguardian",
+    "url": "https://www.theguardian.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Page Not Found | The Guardian</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Thetattooforum",
+    "url": "https://www.thetattooforum.com/members/{username}/",
+    "error_type": "message",
+    "error_msg": "We’re sorry",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tilde.zone (Mastodon Instance)",
+    "url": "https://tilde.zone/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tinder",
+    "url": "https://tinder.com/@{username}",
+    "error_type": "message",
+    "error_msg": "Tinder | Dating, Make Friends &amp; Meet New People",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TipeeeStream",
+    "url": "https://www.tipeeestream.com/v3.0/pages/{username}",
+    "error_type": "message",
+    "error_msg": "\"message\":\"Not found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tooting.ch (Mastodon Instance)",
+    "url": "https://tooting.ch/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "TruckersMP.Ru",
+    "url": "https://truckersmp.ru/{username}",
+    "error_type": "message",
+    "error_msg": "class=\"b-handler-error-404\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Tryst",
+    "url": "https://tryst.link/escort/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Twitcasting",
+    "url": "https://twitcasting.tv/{username}",
+    "error_type": "message",
+    "error_msg": "Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "UEF CONNECT",
+    "url": "https://uefconnect.uef.fi/en/{username}/",
+    "error_type": "message",
+    "error_msg": "<title>Page not found - UEFConnect</title>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Ultras Diary",
+    "url": "http://ultrasdiary.pl/u/{username}/",
+    "error_type": "message",
+    "error_msg": "Ile masz wyjazdów?",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "USA Life",
+    "url": "https://usa.life/{username}",
+    "error_type": "message",
+    "error_msg": "Sorry, page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Uwumarket",
+    "url": "https://uwumarket.us/collections/{username}",
+    "error_type": "message",
+    "error_msg": "Page not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "vibilagare",
+    "url": "https://www.vibilagare.se/users/{username}",
+    "error_type": "message",
+    "error_msg": "Sidan hittades inte |",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vine",
+    "url": "https://vine.co/api/users/profiles/vanity/{username}",
+    "error_type": "message",
+    "error_msg": "That record does not exist",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vkl.world (Mastodon Instance)",
+    "url": "https://vkl.world/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Vmst.io (Mastodon Instance)",
+    "url": "https://vmst.io/api/v1/accounts/lookup?acct={username}",
+    "error_type": "message",
+    "error_msg": "Record not found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Voice123",
+    "url": "https://voice123.com/api/providers/search/{username}",
+    "error_type": "message",
+    "error_msg": "[]",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "W3Schools",
+    "url": "https://pathfinder-api.kai.w3spaces.com/public-profile-api/{username}",
+    "error_type": "message",
+    "error_msg": "\"message\":\"Profile does not exists or not visible\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Warmerise",
+    "url": "https://warmerise.com/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<h2>Page Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "watchmemore.com",
+    "url": "https://api.watchmemore.com/api4/profile/{username}/",
+    "error_type": "message",
+    "error_msg": "notExists",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "waytohey",
+    "url": "https://waytohey.com/{username}",
+    "error_type": "message",
+    "error_msg": "Unfortunately, this page doesn&#039;t exist.",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Wishlistr",
+    "url": "https://www.wishlistr.com/sign-up/?rs=checkUserName&rsargs[]={username}",
+    "error_type": "message",
+    "error_msg": "+:var res = parseInt(0);",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "WordPress.com (Deleted)",
+    "url": "https://public-api.wordpress.com/rest/v1.1/sites/{username}.wordpress.com",
+    "error_type": "message",
+    "error_msg": "\"error\":\"unknown_blog\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "WordPress.org (Forums)",
+    "url": "https://login.wordpress.org/wp-json/wporg/v1/username-available/{username}",
+    "error_type": "message",
+    "error_msg": "\"available\":true",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Xakep.ru",
+    "url": "https://xakep.ru/author/{username}/",
+    "error_type": "message",
+    "error_msg": "Страница не найдена",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "XNXX",
+    "url": "https://www.xnxx.com/mobile/profile/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Bad request",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "yapishu",
+    "url": "https://yapishu.net/user/{username}",
+    "error_type": "message",
+    "error_msg": "Not Found (#404)",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YesWeHack",
+    "url": "https://api.yeswehack.com/hunters/{username}",
+    "error_type": "message",
+    "error_msg": "\"code\":404",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YouNow",
+    "url": "https://api.younow.com/php/api/broadcast/info/user={username}",
+    "error_type": "message",
+    "error_msg": "\"errorMsg\":\"No users found\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YouTube Channel",
+    "url": "https://www.youtube.com/c/{username}/about",
+    "error_type": "message",
+    "error_msg": "<title>404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "YouTube User",
+    "url": "https://www.youtube.com/user/{username}/about",
+    "error_type": "message",
+    "error_msg": "<title>404 Not Found",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Zenn",
+    "url": "https://zenn.dev/{username}",
+    "error_type": "message",
+    "error_msg": "<div class=\"ErrorContent_status__2Ykoq\">404</div>",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Zepeto",
+    "url": "https://gw-napi.zepeto.io/profiles/{username}",
+    "error_type": "message",
+    "error_msg": "errorCode\":",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "zhihu",
+    "url": "https://api.zhihu.com/books/people/{username}/publications?offset=0&limit=5",
+    "error_type": "message",
+    "error_msg": "\"name\": \"NotFoundException\"",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Zillow",
+    "url": "https://www.zillow.com/profile/{username}/",
+    "error_type": "status_code",
+    "error_msg": "",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "zmarsa.com",
+    "url": "https://zmarsa.com/uzytkownik/{username}",
+    "error_type": "message",
+    "error_msg": "<title>Error 404 - zMarsa.com<",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Zomato",
+    "url": "https://www.zomato.com/{username}/reviews",
+    "error_type": "message",
+    "error_msg": "This is a 404 page and we think it's fairly clear",
+    "category": "misc",
+    "region": "global"
+  },
+  {
+    "name": "Военное обозрение",
+    "url": "https://topwar.ru/user/{username}/",
+    "error_type": "message",
+    "error_msg": "class=\"error-container\"",
+    "category": "misc",
     "region": "global"
   }
 ]
